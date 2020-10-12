@@ -6,11 +6,6 @@ options.setUserPreferences({
   "download.default_directory":
     "C:\\selenium_projects\\driverConfiguration\\delme",
 });
-// options.setPreference("browser.download.folderList", 2);
-// options.setPreference(
-//   "browser.helperApps.neverAsk.saveToDisk",
-//   "application/x-csv"
-// );
 
 const driver = new Builder()
   .forBrowser("chrome")
