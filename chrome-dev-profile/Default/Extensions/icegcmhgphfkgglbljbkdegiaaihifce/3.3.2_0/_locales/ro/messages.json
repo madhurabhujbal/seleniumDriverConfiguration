@@ -1,0 +1,269 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "URLringtone": {
+      "message": ""
+   },
+   "_10sec": {
+      "message": "10 secunde"
+   },
+   "_12hour": {
+      "message": "Foloseste systemul de 12 ore. (Setarile de baza folosesc system de 24 de ore:  0: 00 - 23: 59)"
+   },
+   "_1min": {
+      "message": "1 minut"
+   },
+   "_1sec": {
+      "message": "1 secunda"
+   },
+   "_2sec": {
+      "message": "2 secunde"
+   },
+   "_30sec": {
+      "message": "30 secunde"
+   },
+   "_5sec": {
+      "message": "5 secunde"
+   },
+   "about": {
+      "message": "Despre"
+   },
+   "alarm": {
+      "message": ""
+   },
+   "alarmandringtone": {
+      "message": ""
+   },
+   "allpurpose": {
+      "message": ""
+   },
+   "am": {
+      "message": "am"
+   },
+   "analog": {
+      "message": "Ceasul Analog"
+   },
+   "analogmsg": {
+      "message": "(Aproximativ 4K pe secunda)"
+   },
+   "apply": {
+      "message": "Aplica"
+   },
+   "calendar": {
+      "message": ""
+   },
+   "cancel": {
+      "message": "Anuleaza"
+   },
+   "chat": {
+      "message": "Chat box"
+   },
+   "close": {
+      "message": "Inchide"
+   },
+   "cmtmsg": {
+      "message": "O observatie? Raportezi o eroare? Apasa aici!"
+   },
+   "comment": {
+      "message": "Observatie"
+   },
+   "countdown": {
+      "message": ""
+   },
+   "ctxcmt": {
+      "message": "Bug report / Observatie"
+   },
+   "ctxhide": {
+      "message": ""
+   },
+   "day_0": {
+      "message": "Duminica"
+   },
+   "day_1": {
+      "message": "Luni"
+   },
+   "day_2": {
+      "message": "Marti"
+   },
+   "day_3": {
+      "message": "Miercuri"
+   },
+   "day_4": {
+      "message": "Joi"
+   },
+   "day_5": {
+      "message": "Vineri"
+   },
+   "day_6": {
+      "message": "Sambata"
+   },
+   "defaultringtone": {
+      "message": ""
+   },
+   "digital": {
+      "message": "Ceasul Digital"
+   },
+   "digitalmsg": {
+      "message": "(Avertisment: Folosind Ceasul Digital(Digital Clock) va utiliza resurse semnificative din memoria RAM)"
+   },
+   "display": {
+      "message": "Afisaz"
+   },
+   "enablehourlytimeannounce": {
+      "message": "Activeaza Notificarea Continua(1h) (notificare in desktop)"
+   },
+   "evening": {
+      "message": "Ai luat cina?"
+   },
+   "extDes": {
+      "message": "Prima extensie care are ceas digital + analog in bara superioara in Chrome + notificari care apar in Desktop."
+   },
+   "extName": {
+      "message": "Ceasul Chrome"
+   },
+   "forum": {
+      "message": ""
+   },
+   "hourlytimeannounce": {
+      "message": "Notificare continua"
+   },
+   "max999": {
+      "message": "(maxim: 999)"
+   },
+   "memmsg": {
+      "message": "Animatia extrage o noua imagine fiecare secunda, deci va necesita resurse de memorie. Eforturi sunt depuse in incercarea de a reduce acest consum."
+   },
+   "midnight": {
+      "message": "Ce faci?"
+   },
+   "month_1": {
+      "message": "Ian"
+   },
+   "month_10": {
+      "message": "Oct"
+   },
+   "month_11": {
+      "message": "Noi"
+   },
+   "month_12": {
+      "message": "Dec"
+   },
+   "month_2": {
+      "message": "Feb"
+   },
+   "month_3": {
+      "message": "Mar"
+   },
+   "month_4": {
+      "message": "Apr"
+   },
+   "month_5": {
+      "message": "Mai"
+   },
+   "month_6": {
+      "message": "Lun"
+   },
+   "month_7": {
+      "message": "Lul"
+   },
+   "month_8": {
+      "message": "Aug"
+   },
+   "month_9": {
+      "message": "Sep"
+   },
+   "morning": {
+      "message": "Buna dimineata!"
+   },
+   "night": {
+      "message": "E timpul de somn."
+   },
+   "none": {
+      "message": ""
+   },
+   "noon": {
+      "message": "Bine te-am gasit de dupa-masa!"
+   },
+   "noscroll": {
+      "message": "Nu folosi efectul scroll. (Afiseaza 4 numbere in schimb.) "
+   },
+   "notflash": {
+      "message": "(Nu sunt un ceas Flash!)"
+   },
+   "notitimeannounce": {
+      "message": "Notificare continua (1h)"
+   },
+   "notitimeis": {
+      "message": "Acum este"
+   },
+   "notsaved": {
+      "message": ""
+   },
+   "pm": {
+      "message": "pm"
+   },
+   "saved": {
+      "message": "Opţiunile sunt salvate."
+   },
+   "seconds": {
+      "message": "secunde"
+   },
+   "setalarm": {
+      "message": ""
+   },
+   "settings": {
+      "message": "Optiuni"
+   },
+   "showbadgeclock": {
+      "message": "Afiseaza timpul pe insigna (cea rosie)."
+   },
+   "showiconclock": {
+      "message": "Afiseaza ceasul pe icoana(cel cu aratatoare)"
+   },
+   "shownotificationfor": {
+      "message": "Durata afisarii notificarii"
+   },
+   "showtodowhenopen": {
+      "message": "De alertă pentru a-do în notificarea pe desktop atunci când rulaţi browser-ul."
+   },
+   "showupdate": {
+      "message": "Arata pagina de actualizari de fiecare data cand extensia a fost actualizata."
+   },
+   "stat": {
+      "message": ""
+   },
+   "timeis": {
+      "message": "Acum este: "
+   },
+   "timer": {
+      "message": ""
+   },
+   "tools": {
+      "message": ""
+   },
+   "updateiconevery": {
+      "message": "Reimprospateaza icoana in fiecare: "
+   },
+   "updateiconeverymsg": {
+      "message": "(Cu cat durata este mai mare, cu atat mai putine resurse vor fi folosite.)"
+   },
+   "useanalog": {
+      "message": "Foloseste Ceasul Analog"
+   },
+   "usedarkmode": {
+      "message": "Foloseste tema Inchis(Dark) (Pentru cei care folosesc aceasta tema, un balon semi-transparent va fi adaugat sub numere pentru a se putea vedea timpul)"
+   },
+   "usedigital": {
+      "message": "Foloseste Ceasul Digital"
+   },
+   "version": {
+      "message": ""
+   },
+   "viewsavedalarm": {
+      "message": "Vezi salvate alarme"
+   },
+   "whatsnew": {
+      "message": "Vezi ce e nou in aceasta versiune."
+   }
+}

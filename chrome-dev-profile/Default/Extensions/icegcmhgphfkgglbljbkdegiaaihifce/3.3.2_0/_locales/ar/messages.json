@@ -1,0 +1,269 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "URLringtone": {
+      "message": ""
+   },
+   "_10sec": {
+      "message": " ده ثانیه"
+   },
+   "_12hour": {
+      "message": "نمایش ساعت بصورت ۱۲ ساعتی - پیش فرض نمایش ۲۴ ساعتی است "
+   },
+   "_1min": {
+      "message": " یک دقیقه "
+   },
+   "_1sec": {
+      "message": "یک ثانیه"
+   },
+   "_2sec": {
+      "message": " دو ثانیه"
+   },
+   "_30sec": {
+      "message": " سی ثانیه"
+   },
+   "_5sec": {
+      "message": " پنج ثانیه"
+   },
+   "about": {
+      "message": "درباره"
+   },
+   "alarm": {
+      "message": "آلارم ساعت"
+   },
+   "alarmandringtone": {
+      "message": ""
+   },
+   "allpurpose": {
+      "message": ""
+   },
+   "am": {
+      "message": "پیش از ظهر"
+   },
+   "analog": {
+      "message": ""
+   },
+   "analogmsg": {
+      "message": "(در حدود ۴ کیلو بایت در هر ثانیه )"
+   },
+   "apply": {
+      "message": "تایید"
+   },
+   "calendar": {
+      "message": ""
+   },
+   "cancel": {
+      "message": "لغو"
+   },
+   "chat": {
+      "message": ""
+   },
+   "close": {
+      "message": "بستن "
+   },
+   "cmtmsg": {
+      "message": " توضیحی دارید؟ خطایی رو میخواهید گزارش کنید؟ اینجا رو کلیک کنید"
+   },
+   "comment": {
+      "message": "توضیح "
+   },
+   "countdown": {
+      "message": "شمارنده شمارش معکوس"
+   },
+   "ctxcmt": {
+      "message": ""
+   },
+   "ctxhide": {
+      "message": ""
+   },
+   "day_0": {
+      "message": "یکشنبه"
+   },
+   "day_1": {
+      "message": "دوشنبه "
+   },
+   "day_2": {
+      "message": "سه شنبه "
+   },
+   "day_3": {
+      "message": "چهار شنبه"
+   },
+   "day_4": {
+      "message": "پنجشنبه "
+   },
+   "day_5": {
+      "message": "جمعه "
+   },
+   "day_6": {
+      "message": "شنبه "
+   },
+   "defaultringtone": {
+      "message": ""
+   },
+   "digital": {
+      "message": ""
+   },
+   "digitalmsg": {
+      "message": "(اخطار:  استفاده از ساعت دیجیتال باعث مصرف بیشتر حافظه کامپیوتر میشود )"
+   },
+   "display": {
+      "message": "نمایشگر "
+   },
+   "enablehourlytimeannounce": {
+      "message": "فعال کردن اعلان زمان ساعتی بر روی دسکتاپ "
+   },
+   "evening": {
+      "message": "هنوز شامتون رو نخوردید؟"
+   },
+   "extDes": {
+      "message": "اولین افزونه گوگل کروم با نمایش ساعت دیجیتال و عقربه ایی بر روی نوار ابزار و اعلان ساعتی زمان بر  روی دسکتاپ"
+   },
+   "extName": {
+      "message": "باردة على مدار الساعة"
+   },
+   "forum": {
+      "message": ""
+   },
+   "hourlytimeannounce": {
+      "message": "اعلان زمان ساعتی"
+   },
+   "max999": {
+      "message": "(حداکثر:  ۹۹۹) "
+   },
+   "memmsg": {
+      "message": "انیمشن معمولا در هر ثانیه ۱ تصویر میکشد. از اینرو حافظه زیادی مصرف میکند. در حال حاضر من بر روی کاهش مصرف حافظه دارم کار میکنم "
+   },
+   "midnight": {
+      "message": "چه خبر؟"
+   },
+   "month_1": {
+      "message": "ژانویه"
+   },
+   "month_10": {
+      "message": "اکتبر"
+   },
+   "month_11": {
+      "message": "نوامبر"
+   },
+   "month_12": {
+      "message": "دسامبر"
+   },
+   "month_2": {
+      "message": "فوریه"
+   },
+   "month_3": {
+      "message": "مارس"
+   },
+   "month_4": {
+      "message": "آوریل"
+   },
+   "month_5": {
+      "message": "مه"
+   },
+   "month_6": {
+      "message": "ژوئن"
+   },
+   "month_7": {
+      "message": "ژوئیه"
+   },
+   "month_8": {
+      "message": "اوت"
+   },
+   "month_9": {
+      "message": "سپتامبر"
+   },
+   "morning": {
+      "message": "صبح بخیر"
+   },
+   "night": {
+      "message": "وقت خواب رسیده"
+   },
+   "none": {
+      "message": ""
+   },
+   "noon": {
+      "message": "از دیدنتان در این بعدازظهر خوشحالم"
+   },
+   "noscroll": {
+      "message": "عدم نمایش به صورت فهرست - نمایش ۴ خط بجای فهرست "
+   },
+   "notflash": {
+      "message": "(نه با استفاده از ادوبی فلش)"
+   },
+   "notitimeannounce": {
+      "message": "اعلان زمان ساعتی ..."
+   },
+   "notitimeis": {
+      "message": "ساعت"
+   },
+   "notsaved": {
+      "message": ""
+   },
+   "pm": {
+      "message": "بعد از ظهر"
+   },
+   "saved": {
+      "message": "ذخیره شد "
+   },
+   "seconds": {
+      "message": "ثانیه "
+   },
+   "setalarm": {
+      "message": ""
+   },
+   "settings": {
+      "message": "تنظیمات"
+   },
+   "showbadgeclock": {
+      "message": "نمایش ساعت بر روی علامت - علامت قرمز جلوی آیکن "
+   },
+   "showiconclock": {
+      "message": "نمایش ساعت بر روی آیکن "
+   },
+   "shownotificationfor": {
+      "message": "مدت نمایش اعلان:  "
+   },
+   "showtodowhenopen": {
+      "message": "اعلام لیست کارهایی که بایستی انجام دهید بر روی دسکتاپ در هنگامی که گوگل کروم شما باز است "
+   },
+   "showupdate": {
+      "message": "نمایش وضیعت بروز رسانی هر زمان که که این افزونه بروز شد "
+   },
+   "stat": {
+      "message": ""
+   },
+   "timeis": {
+      "message": "زمان"
+   },
+   "timer": {
+      "message": ""
+   },
+   "tools": {
+      "message": ""
+   },
+   "updateiconevery": {
+      "message": "فراخوانی آیکون در هر:  "
+   },
+   "updateiconeverymsg": {
+      "message": "(طولانی تر از آن است، سبکتر این فرمت است)"
+   },
+   "useanalog": {
+      "message": "نمایش ساعت عقربه ایی "
+   },
+   "usedarkmode": {
+      "message": "استفاده از تم تیره - برای کاربرانی که از تم تیره استفاده میکنند. این تم به صورت نیمه روشن است "
+   },
+   "usedigital": {
+      "message": "نمایش ساعت دیجیتال "
+   },
+   "version": {
+      "message": "نسخه"
+   },
+   "viewsavedalarm": {
+      "message": "نمایش آلارم های ذخیره شد "
+   },
+   "whatsnew": {
+      "message": "دیدن تغییرات جدید در این نسخه"
+   }
+}

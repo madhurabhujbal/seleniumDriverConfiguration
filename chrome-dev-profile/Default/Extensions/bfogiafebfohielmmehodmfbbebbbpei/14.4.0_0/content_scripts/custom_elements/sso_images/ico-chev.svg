@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <polygon id="ico-chev-a" points="5.882 8.403 10.084 12.605 14.286 8.403"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" opacity=".99">
+    <mask id="ico-chev-b" fill="#fff">
+      <use xlink:href="#ico-chev-a"/>
+    </mask>
+    <use fill="#000" fill-rule="nonzero" xlink:href="#ico-chev-a"/>
+    <g fill="#000" mask="url(#ico-chev-b)">
+      <rect width="19.955" height="19.955"/>
+    </g>
+  </g>
+</svg>

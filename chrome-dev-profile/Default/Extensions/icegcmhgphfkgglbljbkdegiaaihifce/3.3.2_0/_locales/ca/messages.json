@@ -1,0 +1,269 @@
+{
+   "OK": {
+      "message": "Acceptar"
+   },
+   "URLringtone": {
+      "message": ""
+   },
+   "_10sec": {
+      "message": "10 segons"
+   },
+   "_12hour": {
+      "message": "Utilitzar l'opció de 12 hores ( l'opció per defecte és la de 24 hores)"
+   },
+   "_1min": {
+      "message": "1 minut"
+   },
+   "_1sec": {
+      "message": "1 segon"
+   },
+   "_2sec": {
+      "message": "2 segons"
+   },
+   "_30sec": {
+      "message": "30 segons"
+   },
+   "_5sec": {
+      "message": "5 segons"
+   },
+   "about": {
+      "message": "Sobre"
+   },
+   "alarm": {
+      "message": "Alarma"
+   },
+   "alarmandringtone": {
+      "message": ""
+   },
+   "allpurpose": {
+      "message": ""
+   },
+   "am": {
+      "message": "am"
+   },
+   "analog": {
+      "message": "Rellotge analògic"
+   },
+   "analogmsg": {
+      "message": "(aproximadament 4 KB per segon)"
+   },
+   "apply": {
+      "message": "Aplicar"
+   },
+   "calendar": {
+      "message": ""
+   },
+   "cancel": {
+      "message": "Cancel·lar"
+   },
+   "chat": {
+      "message": "Chat box"
+   },
+   "close": {
+      "message": "Tancar"
+   },
+   "cmtmsg": {
+      "message": "Teniu algun comentari? Notificar un error? Premeu aquí!"
+   },
+   "comment": {
+      "message": "Comentari"
+   },
+   "countdown": {
+      "message": "Temporitzador de compte enrere"
+   },
+   "ctxcmt": {
+      "message": "Bug report / Comentari"
+   },
+   "ctxhide": {
+      "message": ""
+   },
+   "day_0": {
+      "message": "Diumenge"
+   },
+   "day_1": {
+      "message": "Dilluns"
+   },
+   "day_2": {
+      "message": "Dimarts"
+   },
+   "day_3": {
+      "message": "Dimecres"
+   },
+   "day_4": {
+      "message": "Dijous"
+   },
+   "day_5": {
+      "message": "Divendres"
+   },
+   "day_6": {
+      "message": "Dissabtes"
+   },
+   "defaultringtone": {
+      "message": ""
+   },
+   "digital": {
+      "message": "Rellotge digital"
+   },
+   "digitalmsg": {
+      "message": "(Avís:  L'ús del rellotge digital ocupa mols recursos de l'ordinador)"
+   },
+   "display": {
+      "message": "Pantalla"
+   },
+   "enablehourlytimeannounce": {
+      "message": "Posar l'avís horari (Notificació d'escriptori)"
+   },
+   "evening": {
+      "message": "Encara has de sopar?"
+   },
+   "extDes": {
+      "message": "An extension fully loaded with tons of useful time-related features... But the best part is, it is totally COOL."
+   },
+   "extName": {
+      "message": "Refredar Rellotge"
+   },
+   "forum": {
+      "message": ""
+   },
+   "hourlytimeannounce": {
+      "message": "Notificació horària"
+   },
+   "max999": {
+      "message": "(Màxim:  999)"
+   },
+   "memmsg": {
+      "message": "Animació, generalment, \"dibuixa\" una imatge nova cada segon, habitualment (i després d'una estona) això esmerça molts recursos, si l'escolliu tot es pot tornar més més lent."
+   },
+   "midnight": {
+      "message": "Què passa?"
+   },
+   "month_1": {
+      "message": "Gen."
+   },
+   "month_10": {
+      "message": "Oct."
+   },
+   "month_11": {
+      "message": "Nov."
+   },
+   "month_12": {
+      "message": "Dec."
+   },
+   "month_2": {
+      "message": "Feb."
+   },
+   "month_3": {
+      "message": "Març"
+   },
+   "month_4": {
+      "message": "Abr."
+   },
+   "month_5": {
+      "message": "Maig"
+   },
+   "month_6": {
+      "message": "Juny"
+   },
+   "month_7": {
+      "message": "Jul."
+   },
+   "month_8": {
+      "message": "Ago."
+   },
+   "month_9": {
+      "message": "Set."
+   },
+   "morning": {
+      "message": "Bon dia!"
+   },
+   "night": {
+      "message": "És l'hora d'anar a dormir."
+   },
+   "none": {
+      "message": ""
+   },
+   "noon": {
+      "message": "Que bé que et veig aquesta tarda!"
+   },
+   "noscroll": {
+      "message": "No utilitzar l'efecte de rotació (mostra 4 números enlloc rotar)"
+   },
+   "notflash": {
+      "message": "(No sóc un Adobe Flash rellotge!)"
+   },
+   "notitimeannounce": {
+      "message": "Notificació horària..."
+   },
+   "notitimeis": {
+      "message": "Ara són les"
+   },
+   "notsaved": {
+      "message": ""
+   },
+   "pm": {
+      "message": "hores"
+   },
+   "saved": {
+      "message": "Desat."
+   },
+   "seconds": {
+      "message": "segons"
+   },
+   "setalarm": {
+      "message": ""
+   },
+   "settings": {
+      "message": "Opcions"
+   },
+   "showbadgeclock": {
+      "message": "Veure el temps com un distintiu"
+   },
+   "showiconclock": {
+      "message": "Mostra el rellotge com a icona (el de la fletxa)"
+   },
+   "shownotificationfor": {
+      "message": "Mostrar la notificació per: "
+   },
+   "showtodowhenopen": {
+      "message": "Alerta de les tasques pendents amb una notificació a l'escriptori quan s'executi el navegador."
+   },
+   "showupdate": {
+      "message": "Mostrar la pàgina actualitzada cada cop que l'aplicació s'ha actualitzat."
+   },
+   "stat": {
+      "message": ""
+   },
+   "timeis": {
+      "message": "Ara són les: "
+   },
+   "timer": {
+      "message": ""
+   },
+   "tools": {
+      "message": ""
+   },
+   "updateiconevery": {
+      "message": "Actualitzar la icona cada: "
+   },
+   "updateiconeverymsg": {
+      "message": "(posa el que et sembli, serà molt millor.)"
+   },
+   "useanalog": {
+      "message": "Utilitzar el rellotge analògic"
+   },
+   "usedarkmode": {
+      "message": "Utilitzar el tema fosc (Per aquells que utilitzeu el tema fosc, cal que utilitzeu un fons clar per poder veure l'hora)"
+   },
+   "usedigital": {
+      "message": "Utilitzar el rellotge digital"
+   },
+   "version": {
+      "message": "Versió"
+   },
+   "viewsavedalarm": {
+      "message": "Veure les alarmes desades"
+   },
+   "whatsnew": {
+      "message": "Veure les novetats d'aquesta versió"
+   }
+}

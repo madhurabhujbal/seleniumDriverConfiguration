@@ -1,0 +1,313 @@
+.cs-select {
+  background: transparent;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #5b8583;
+}
+
+div.cs-select {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+    background: #fff;
+    z-index: 100;
+    width: 100%;
+    max-width: 500px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@@keyframes bounce {
+  0% {
+      -webkit-transform: translate3d(0,-25px,0);
+      transform: translate3d(0,-25px,0);
+      opacity: 0;
+  }
+  25% {
+      -webkit-transform: translate3d(0,10px,0);
+      transform: translate3d(0,10px,0);
+  }
+  50% {
+      -webkit-transform: translate3d(0,-6px,0);
+      transform: translate3d(0,-6px,0);
+  }
+  75% {
+      -webkit-transform: translate3d(0,2px,0);
+      transform: translate3d(0,2px,0);
+  }
+  100% {
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+      opacity: 1;
+  }
+}
+.cs-skin-elastic .cs-options .cs-selected span::after {
+    content: '';
+}
+.cs-select > span::after, .cs-select .cs-selected span::after {
+    speak: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.cs-select .cs-selected span::after {
+    content: '\2713';
+    margin-left: 1em;
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cs-select select {
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    color: black;
+    cursor: default;
+}
+.cs-skin-elastic.cs-active .cs-options {
+    pointer-events: auto;
+}
+.cs-select select {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    font: 400 13.3333px Arial;
+}
+.cs-select.cs-active .cs-options {
+    visibility: visible;
+}
+
+.cs-select.cs-active > span::after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+}
+.cs-skin-elastic.cs-active .cs-options ul li {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-animation: bounce 0.6s ease-out;
+    animation: bounce 0.6s ease-out;
+}
+.cs-skin-elastic > span::after {
+    font-family: 'icomoon';
+    content: '\e005';
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cs-select > span::after {
+    content: '\25BE';
+    right: 1em;
+}
+.cs-skin-elastic.cs-active .cs-options > ul::before {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+    -webkit-transition: none;
+    transition: none;
+    -webkit-animation: expand 0.6s ease-out;
+    animation: expand 0.6s ease-out;
+}
+.cs-skin-elastic .cs-options > ul::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transform: scale3d(1,0,1);
+    transform: scale3d(1,0,1);
+    background: #fff;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+.cs-skin-elastic {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  z-index: 100;
+  width: 100%;
+  max-width: 500px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cs-select > span {
+    padding-right: 3em;
+}
+
+.cs-skin-elastic > span {
+    background-color: #fff;
+    z-index: 100;
+}
+
+.cs-select span {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 0.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.cs-skin-elastic {
+    background: transparent;
+    font-size: 1em;
+    font-weight: 700;
+    color: #000;
+}
+
+.cs-placeholder {
+  border-radius: 5px;
+}
+
+#header-for-dropdown-prompt-appearance {
+  margin-bottom: 8px;
+}
+
+#header-for-checkbox-prompt-appearance {
+   margin-top: 16px;
+}
+
+#header-for-checkbox-append-to-lock {
+  margin-top: 0px;
+}
+
+.cs-skin-elastic .cs-options {
+    overflow: visible;
+    background: transparent;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.cs-select .cs-options {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    visibility: hidden;
+}
+
+.cs-select select {
+    display: none;
+}
+
+.cs-select button, select {
+    text-transform: none;
+}
+
+.cs-select button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+.cs-select select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+
+.cs-select select {
+    border-radius: 0px;
+    border-color: rgb(169, 169, 169);
+}
+
+.cs-select select {
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    color: black;
+    background-color: white;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+}
+
+.cs-select select {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+
+.cs-select select {
+    -webkit-writing-mode: horizontal-tb !important;
+}
+
+.cs-select option:disabled {
+    color: graytext;
+}
+
+.cs-select option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.cs-select ul {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0px 8px 0px;
+    width: 100%;
+}
+
+.cs-skin-elastic .cs-options ul li {
+    opacity: 0;
+    -webkit-transform: translate3d(0,-25px,0);
+    transform: translate3d(0,-25px,0);
+    -webkit-transition: opacity 0.15s, -webkit-transform 0.15s;
+    transition: opacity 0.15s, transform 0.15s;
+}
+
+.cs-select li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.cs-skin-elastic .cs-options span:hover, .cs-skin-elastic .cs-options li.cs-focus span, .cs-skin-elastic .cs-options .cs-selected span {
+    color: #000;
+}
+
+.cs-skin-elastic .cs-options span {
+    background-repeat: no-repeat;
+    background-position: 1.5em 50%;
+    background-size: 2em auto;
+    padding: 0.6em 1em 0.6em 2em;
+}

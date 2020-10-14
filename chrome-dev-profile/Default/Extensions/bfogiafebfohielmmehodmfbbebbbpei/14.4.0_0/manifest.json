@@ -1,0 +1,62 @@
+{
+   "author": "Keeper Security, Inc.",
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "19-inactive.png",
+         "38": "38-inactive.png"
+      },
+      "default_popup": "browser_action/browser_action.html",
+      "default_title": "Keeper"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "chromeos": "Alt+K",
+            "linux": "Alt+K",
+            "mac": "Command+Shift+K",
+            "windows": "Alt+K"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "content_scripts/custom_elements/custom_elements.css", "content_scripts/custom_elements/custom_elements_themes.css", "content_scripts/custom_elements/keeper-tooltips.css", "content_scripts/custom_elements/sso.css" ],
+      "js": [ "javascript/translation.js", "javascript/countries.js", "javascript/sandblaster.min.js", "content_scripts/KeeperFill-var.js", "content_scripts/libphonenumber.js", "content_scripts/messaging.js", "content_scripts/misc_functions.js", "content_scripts/custom_elements/dist/outer.bundle.js", "content_scripts/password_functions.js", "content_scripts/injected_script.js", "content_scripts/prompt.js", "content_scripts/sso.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "content_scripts/messaging.js", "content_scripts/vault.js" ],
+      "matches": [ "https://keepersecurity.com/vault/*", "https://*.keepersecurity.com/vault/*", "https://keepersecurity.eu/vault/*", "https://*.keepersecurity.eu/vault/*", "http://localhost:8000/vault/" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "content_scripts/console.js" ],
+      "matches": [ "https://keepersecurity.com/console/*", "https://*.keepersecurity.com/console/*", "https://keepersecurity.eu/console/*", "https://*.keepersecurity.eu/console/*", "http://localhost:8000/console/" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en_US",
+   "description": "__MSG_description__",
+   "externally_connectable": {
+      "matches": [ "https://keepersecurity.com/vault/*", "https://*.keepersecurity.com/vault/*", "https://keepersecurity.eu/vault/*", "https://*.keepersecurity.eu/vault/*" ]
+   },
+   "homepage_url": "https://keepersecurity.com",
+   "icons": {
+      "128": "128x128.png",
+      "16": "16x16_black.png",
+      "32": "32x32.png",
+      "48": "48x48.png",
+      "64": "64x64.png",
+      "96": "96x96.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDcsKXuyjiNrW/Cm2c6MS+aydp48dQwIwQxV7dbXt8Cki9myzEjnJTPis+TdnUdXaTF7NZXQo58CIMoP0YP8JenCMMlJB0A20iaRNmJui14eGjtJyusQluEFI6U/WNnMGr/INoklwJl2fje++Rpx2pAjtB0oUKTxLFfx5eIozR3fwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "permissions": [ "clipboardWrite", "contextMenus", "storage", "tabs", "browsingData", "activeTab", "https://keepersecurity.com/vault/*", "https://*.keepersecurity.com/vault/*", "https://keepersecurity.eu/vault/*", "https://*.keepersecurity.eu/vault/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "14.4.0",
+   "version_name": "14.4.0",
+   "web_accessible_resources": [ "images/*", "content_scripts/prompt.html", "content_scripts/contextMenuConfirmation.html", "content_scripts/custom_elements/*", "content_scripts/*.js", "extension_loaded.json" ]
+}

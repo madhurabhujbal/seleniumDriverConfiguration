@@ -1,0 +1,269 @@
+{
+   "OK": {
+      "message": "Εντάξει"
+   },
+   "URLringtone": {
+      "message": ""
+   },
+   "_10sec": {
+      "message": "10 δευτερόλεπτα"
+   },
+   "_12hour": {
+      "message": "Χρησιμοποιήστε 12 ώρo σύστημα (Προεπιλογή χρησιμοποιεί 24 ώρο σύστημα)"
+   },
+   "_1min": {
+      "message": "1 λεπτό"
+   },
+   "_1sec": {
+      "message": "1 δευτερόλεπτο"
+   },
+   "_2sec": {
+      "message": "2 δευτερόλεπτα"
+   },
+   "_30sec": {
+      "message": "30 δευτερόλεπτα"
+   },
+   "_5sec": {
+      "message": "5 δευτερόλεπτα"
+   },
+   "about": {
+      "message": "Σχετικά"
+   },
+   "alarm": {
+      "message": "ξυπνητήρι"
+   },
+   "alarmandringtone": {
+      "message": ""
+   },
+   "allpurpose": {
+      "message": ""
+   },
+   "am": {
+      "message": ""
+   },
+   "analog": {
+      "message": "αναλογικό ρολό"
+   },
+   "analogmsg": {
+      "message": "(Περίπου 4 KB ανά δευτερόλεπτο.)"
+   },
+   "apply": {
+      "message": "Εφαρμογή"
+   },
+   "calendar": {
+      "message": ""
+   },
+   "cancel": {
+      "message": "Ακύρωση"
+   },
+   "chat": {
+      "message": "Chat box"
+   },
+   "close": {
+      "message": "Κλείσιμο"
+   },
+   "cmtmsg": {
+      "message": "Έχετε κάποιο σχόλιο; Αναφέρετε ένα σφάλμα; Πατήστε εδώ!"
+   },
+   "comment": {
+      "message": "Σχολιάστε"
+   },
+   "countdown": {
+      "message": "χρονόμετρο αντίστροφης μέτρησης"
+   },
+   "ctxcmt": {
+      "message": ""
+   },
+   "ctxhide": {
+      "message": ""
+   },
+   "day_0": {
+      "message": "Κυριακή"
+   },
+   "day_1": {
+      "message": "Δευτέρα"
+   },
+   "day_2": {
+      "message": "Τρίτη"
+   },
+   "day_3": {
+      "message": "Τετάρτη"
+   },
+   "day_4": {
+      "message": "Πέμπτη"
+   },
+   "day_5": {
+      "message": "Παρασκευή"
+   },
+   "day_6": {
+      "message": "Σάββατο"
+   },
+   "defaultringtone": {
+      "message": ""
+   },
+   "digital": {
+      "message": "ψηφιακό ρολόι"
+   },
+   "digitalmsg": {
+      "message": "(Προσοχή:  Χρησιμοποιώντας το ψηφιακό ρολόι θα καταλαμβάνει πολύ μνήμη του υπολογιστή σας.)"
+   },
+   "display": {
+      "message": "Εμφάνιση"
+   },
+   "enablehourlytimeannounce": {
+      "message": "Ενεργοποίηση Ωριαίας Ανακοίνωσης Ώρας! (κοινοποίηση στην επιφάνεια εργασίας)"
+   },
+   "evening": {
+      "message": "Έχετε φάει το δείπνο σας ακόμα;"
+   },
+   "extDes": {
+      "message": "An extension fully loaded with tons of useful time-related features... But the best part is, it is totally COOL."
+   },
+   "extName": {
+      "message": "Cool Ρολόι"
+   },
+   "forum": {
+      "message": ""
+   },
+   "hourlytimeannounce": {
+      "message": "Ωριαία Ανακοίνωση Ώρας"
+   },
+   "max999": {
+      "message": "(Μέγιστη:  999)"
+   },
+   "memmsg": {
+      "message": "Η αναζωογόνηση συνήθως \"σύρει\" μια νέα εικόνα ανά δευτερόλεπτο, οπότε κανονικά θα πάρει επάνω πολύ μνήμη μετά από μια χρονική περίοδο, ενώ είμαι προσπαθώντας να μειωθεί στο ελάχιστο."
+   },
+   "midnight": {
+      "message": "Τι κάνεις;"
+   },
+   "month_1": {
+      "message": "Ιαν"
+   },
+   "month_10": {
+      "message": "Οκτ"
+   },
+   "month_11": {
+      "message": "Νοέ"
+   },
+   "month_12": {
+      "message": "Δεκ"
+   },
+   "month_2": {
+      "message": "Φεβ"
+   },
+   "month_3": {
+      "message": "Μάρ"
+   },
+   "month_4": {
+      "message": "Απρ"
+   },
+   "month_5": {
+      "message": "Μάι"
+   },
+   "month_6": {
+      "message": "Ιούν"
+   },
+   "month_7": {
+      "message": "Ιούλ"
+   },
+   "month_8": {
+      "message": "Αύγ"
+   },
+   "month_9": {
+      "message": "Σεπ"
+   },
+   "morning": {
+      "message": "Καλημέρα!"
+   },
+   "night": {
+      "message": "Ήρθε η ώρα για ύπνο."
+   },
+   "none": {
+      "message": ""
+   },
+   "noon": {
+      "message": "Μεγάλη μου χαρά που σας βλέπω μέσα στο Απόγευμα!"
+   },
+   "noscroll": {
+      "message": "Μην χρησιμοποιείτε εφέ κύλισης (Εμφάνιση 4 αριθμούς αντί για κύλιση)"
+   },
+   "notflash": {
+      "message": "(Δεν είμαι ένα ρολόι Flash!)"
+   },
+   "notitimeannounce": {
+      "message": "Ωριαία Ανακοίνωση Ώρας..."
+   },
+   "notitimeis": {
+      "message": "Τώρα είναι"
+   },
+   "notsaved": {
+      "message": ""
+   },
+   "pm": {
+      "message": ""
+   },
+   "saved": {
+      "message": "Αποθηκεύτηκε."
+   },
+   "seconds": {
+      "message": "δευτερόλεπτα."
+   },
+   "setalarm": {
+      "message": ""
+   },
+   "settings": {
+      "message": "Επιλογές"
+   },
+   "showbadgeclock": {
+      "message": "Εμφάνιση ώρας στο σήμα"
+   },
+   "showiconclock": {
+      "message": "Εμφάνιση ρολογιού στο εικονίδιο (Το ένα με βέλος)"
+   },
+   "shownotificationfor": {
+      "message": "Εμφάνιση κοινοποίησης για: "
+   },
+   "showtodowhenopen": {
+      "message": "Ειδοποίηση προς-dos στην επιφάνεια εργασίας, Ειδοποίηση όταν εκτελείτε το πρόγραμμα περιήγησης σας."
+   },
+   "showupdate": {
+      "message": "Εμφάνιση της σελίδας ενημέρωσης μετά από κάθε φορά που αυτή η επέκταση έχει ενημερωθεί."
+   },
+   "stat": {
+      "message": "Στατιστικά"
+   },
+   "timeis": {
+      "message": "Τώρα η ώρα είναι: "
+   },
+   "timer": {
+      "message": ""
+   },
+   "tools": {
+      "message": ""
+   },
+   "updateiconevery": {
+      "message": "Ανανεώστε το εικονίδιο κάθε: "
+   },
+   "updateiconeverymsg": {
+      "message": "(Όσο περισσότερο είναι, τόσο ελαφρύτερη είναι αυτή η επέκταση.)"
+   },
+   "useanalog": {
+      "message": "Χρησιμοποιήστε το αναλογικό ρολόι"
+   },
+   "usedarkmode": {
+      "message": "Χρησιμοποιήστε τη λειτουργία θέματος σκοτεινό (Για εκείνους που χρησιμοποιούν σκοτεινό θέμα, θα προσθέσουμε μια μισό-διαφανή φούσκα με τους αριθμούς έτσι ώστε να μπορέσετε να δείτε την ώρα.)"
+   },
+   "usedigital": {
+      "message": "Χρησιμοποιήστε το ψηφιακό ρολόι"
+   },
+   "version": {
+      "message": "Έκδοση"
+   },
+   "viewsavedalarm": {
+      "message": "Προβολή αποθηκευμένων ειδοποιήσεων"
+   },
+   "whatsnew": {
+      "message": "Δείτε τι νέο υπάρχει σε αυτήν την έκδοση"
+   }
+}

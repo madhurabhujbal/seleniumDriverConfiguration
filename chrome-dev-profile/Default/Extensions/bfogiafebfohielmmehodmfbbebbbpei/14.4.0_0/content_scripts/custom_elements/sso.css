@@ -1,0 +1,191 @@
+.container#keeper-sso {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: auto !important; /* Need to override from success.css */
+  padding: 32px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: Overpass, "Helvetica Neue";
+}
+
+.container#keeper-sso div.keeper-logo {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/ico-keeper-black.svg);
+  background-repeat: no-repeat;
+  background-size: 117px 36px;
+  display: block;
+  height: 36px;
+  width: 117px;
+  margin-bottom: 24px;
+}
+
+/* Need to override from success.css */
+.container#keeper-sso .bottom_space_header {
+  margin-bottom: 20px;
+  width: 218px;
+}
+
+.container#keeper-sso div#progress {
+  margin-top: 10px;
+}
+
+.container#keeper-sso div#waiting {
+  margin-top: 20px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.container#keeper-sso .error {
+  align-items: center !important;
+}
+
+.container#keeper-sso .error_text {
+  color: red;
+  text-align: center !important;
+  font-family: inherit;
+}
+
+.container#keeper-sso .saml_error {
+  text-align: center !important;
+  align-items: center !important;
+}
+
+.container#keeper-sso button {
+  width: 160px !important;
+  height: 40px !important;
+  margin: 5px 4px !important;
+  cursor: pointer !important;
+  border: none !important;
+  border-radius: 4px !important;
+  color: black !important;
+  outline: none !important;
+  background-color: rgb(229, 229, 229) !important;
+  font-family: inherit !important;
+  font-size: 13px !important;
+
+  -moz-user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+.container#keeper-sso button.primary {
+  background-color: rgb(247, 198, 68) !important;
+}
+
+.container#keeper-sso .twofac {
+  width: 100% !important;
+  margin-top: 15px;
+}
+
+.container#keeper-sso #keeper-duo {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.container#keeper-sso #keeper-duo .logo {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/duo-logo.svg);
+  background-size: 75px 25px;
+  height: 25px;
+  width: 75px;
+  margin: 0 auto 15px;
+}
+.container#keeper-sso #keeper-duo .message {
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+  margin: 25px 40px 15px;
+}
+.container#keeper-sso #keeper-duo .duobuttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container#keeper-sso #keeper-duo .duobuttons button:active {
+  background-color: #ffd600;
+  color: #333;
+}
+.container#keeper-sso #keeper-duo .duobuttons button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.container#keeper-sso #two_factor_info {
+  text-align: start !important;
+  font-family: inherit;
+  font-size: 13px;
+  margin-bottom: 5px !important;
+}
+
+.container#keeper-sso #two_factor_code {
+  width: 100% !important;
+  height: 40px !important;
+  color: black !important;
+  background-color: rgb(242, 242, 242) !important;
+  border: none !important;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  padding: 0px 50px 0px 10px !important;
+  outline: none !important;
+  /* -moz-user-select: none !important;
+  -webkit-user-select: none !important; */
+}
+
+.container#keeper-sso .twofac #eyeball {
+  position: absolute;
+  bottom: 155px;
+  right: 45px;
+  display: block;
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/visibility.svg);
+  background-size: '24px 24px';
+  background-repeat: 'no-repeat';
+  height: 24px;
+  width: 24px;
+
+  filter: opacity(0.5);
+}
+
+.container#keeper-sso .twofac #eyeball.visibility_off {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/visibility_off.svg);
+}
+
+.container#keeper-sso #two_factor_code::placeholder,
+.container#keeper-sso #two_factor_code::-webkit-input-placeholder {
+  color: rgb(145, 145, 145);
+}
+
+.container#keeper-sso #twofac > select {
+  font-family: inherit;
+  font-size: 14px;
+  
+  width: 100% !important;
+  height: 40px;
+  padding: 0px 12px;
+  margin-bottom: 15px;
+  
+  background-color: rgb(242, 242, 242);
+  border: none;
+  outline: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/arrow_drop_down_black.png);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 98% center;
+}
+
+.container#keeper-sso #twofac > select::after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}

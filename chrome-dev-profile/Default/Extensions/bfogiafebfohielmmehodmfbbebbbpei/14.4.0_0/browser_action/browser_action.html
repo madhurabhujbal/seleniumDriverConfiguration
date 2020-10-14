@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Browser Action</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="browser_action.css">
+    <link rel="stylesheet" href="select_for_prompt_appearance.css">
+    <link rel="stylesheet" href="browser_action_themes.css">
+    <link rel="stylesheet" href="tooltips.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="md-toggle.css">
+    <link rel="stylesheet" href="../fonts/material-icons/material-icons.css">
+    <link rel="stylesheet" href="../content_scripts/totp/totp.css">
+  </head>
+
+  <body>
+    <div id="container" class="metal">
+      <div id="header">
+        <div>
+          <div class="keeperlogo"></div>
+          <div class="client-version-number"></div>
+          <div class="icon help material-icons tooltip-left" data-translation="Help" tooltip="Help">help</div>
+          <div class="icon search material-icons tooltip-left iconbutton hidden" data-translation="SearchKeeper" tooltip="Search Keeper">search</div>
+          <div class="icon close tooltip-left iconbutton hidden" data-translation="Back">Back</div>
+        </div>
+        <div id="search" class="collapsed">
+          <input placeholder="Search" data-translation="Search">
+        </div>
+      </div>
+
+      <div id="login">
+        <form autocomplete="off" novalidate>
+
+          <div class="email-container">
+            <input style="flex-grow:1;" name="login" class="full" placeholder="Email Address" data-translation="Email_Address" type="email" required spellcheck="false">
+            <span id="dropdown-button" style="flex-grow:1;cursor:pointer" class="material-icons hidden">arrow_drop_down</span>
+          </div>
+
+          <div class="hidden" id="the-multi-login-dropdown">
+            <template id="user_template">
+              <div class="the-entries">
+                <div class="username"></div>
+                <div class="close-icon">
+                  <span class="material-icons actual-close-icon">close</span>
+                </div>
+              </div>
+            </template>
+            <template id="add-entry-template">
+              <div class="the-entries" id="add-entry">
+                <span class="material-icons add-icon">add</span>
+                <div class="add-button">Add Account</div>
+              </div>
+            </template>
+          </div>
+
+          <input name="password" id="master-password" class="full" placeholder="Master Password" data-translation="master_password" type="password" required spellcheck="false">
+
+          <div id="sso" class="hidden">
+            <div data-translation="enterprise_sso_login">Enterprise SSO Login</div>
+            <input name="sso_security_provider" placeholder="Enterprise Domain" data-translation="sso_enterprise_domain" spellcheck="false">
+            <div class="error"></div>
+            <div class="ssoactions">
+              <button type="button" id="cancelSSO" class="pretty transparent" data-translation="Cancel">Cancel</button>
+              <button type="button" id="connectSSO" class="pretty gold" data-translation="enterprise_sso_connect_button" disabled>Connect</button>
+            </div>
+          </div>
+
+          <div id="dna" class="hidden">
+            <div class="logo"></div>
+            <div class="message"></div>
+          </div>
+
+          <div id="duo" class="hidden">
+            <div class="logo"></div>
+            <div class="message"></div>
+            <div class="duobuttons">
+              <button id="duo-push" data-mode="push" class="pretty hidden" data-translation="duo_push">Duo Push</button>
+              <button id="duo-sms" data-mode="sms" class="pretty hidden" data-translation="duo_text_message">Text Message</button>
+              <button id="duo-phone" data-mode="phone" class="pretty hidden" data-translation="duo_voice_call">Voice Call</button>
+            </div>
+          </div>
+
+          <div id="twofactorcode" class="hidden">
+            <input name="totp" class="full" type="password" placeholder="Please enter your code" data-translation="two_factor_need_totp" spellcheck="false">
+            <select name="expire_days">
+              <option value="0" data-translation="Require_every_login">Require code every login</option>
+              <option value="30" data-translation="Require_every_30_days">Require code every 30 days</option>
+              <option value="9999" data-translation="Save_code__forever">Save code on this device forever</option>
+            </select>
+          </div>
+
+          <div class="error"></div>
+
+          <div id="actionable-buttons">
+            <div class="actions">
+              <span class="material-icons checkbox remember checked">check_box</span>
+              <span class="label remember" data-translation="remember_email">Remember Email</span>
+              <button class="pretty gold login" formnovalidate type="submit" data-translation="Login">Login</button>
+              <button class="pretty gold upgrade hidden" type="button" data-translation="newfreetrial_popup_buy">Upgrade Now</button>
+              <button class="pretty gold vault hidden" type="button" data-translation="website_support_22">Web Vault</button>
+            </div>
+            <div class="linkactions">
+              <div class="start_sso" data-translation="enterprise_sso_login">Enterprise SSO Login</div>
+              <div class="account_upsell" data-translation="KeeperProfile.new">Create an account</div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="search-results" class="themable hidden">
+        <template id="record_template">
+          <div class="record themable">
+            <div>
+              <div class="material-icons iconbutton expand tooltip-fullright" tooltip="Show/Hide" data-translation="showhide">expand_more</div>
+              <div class="record-data">
+                <div class="title"></div>
+                <div class="login"></div>
+              </div>
+              <div class="material-icons iconbutton fill tooltip-fullleft" tooltip="Tap to Fill" data-translation="tap_to_fill">input</div>
+            </div>
+            <div class="more hidden"></div>
+          </div>
+        </template>
+
+        <template id="field_template">
+          <div class="field">
+            <div class="name"></div>
+            <div class="value"></div>
+            <div class="material-icons md-18 copy tooltip-left tooltip-top" tooltip="Copy" data-translation="Copy">content_copy</div>
+          </div>
+        </template>
+
+        <template id="maskable_content_field_template">
+          <div class="field maskable">
+            <div class="name"></div>
+            <div class="value"></div>
+            <div class="material-icons md-18 copy tooltip-left tooltip-top" tooltip="Copy" data-translation="Copy">content_copy</div>
+            <div class="material-icons show tooltip-left tooltip-top" tooltip="View Contents" data-translation="view_contents">visibility</div>
+          </div>
+        </template>
+
+        <template id="totp_template">
+          <div class="field maskable totp">
+            <div class="field-content">
+              <div class="name"></div>
+              <div class="value"></div>
+            </div>
+            <div class="material-icons md-18 copy tooltip-left tooltip-top" tooltip="Copy" data-translation="Copy">content_copy</div>
+            <div class="material-icons show tooltip-left tooltip-top" tooltip="View Contents" data-translation="view_contents">visibility</div>
+          </div>
+        </template>
+
+        <template id="password_template">
+          <div class="field password">
+            <div class="name"></div>
+            <div class="value"></div>
+            <div class="material-icons md-18 copy tooltip-left tooltip-top" tooltip="Copy" data-translation="Copy">content_copy</div>
+            <div class="material-icons show tooltip-left tooltip-top" tooltip="View Password" data-translation="view_password">visibility</div>
+            <div class="restricted" data-translation="view_password_restriction">Viewing this password is restricted by your Keeper administrator</div>
+          </div>
+        </template>
+
+        <template id="open_record_to_vault">
+          <div class="record-to-vault">
+            <div class="value" data-translation="ext_OpenInVault" style="font-size:14px;opacity:1;margin-bottom:0px;">Open in Vault</div>
+            <div class="material-icons launch" style="font-size:20px;">launch</div>
+          </div>
+        </template>
+
+        <div id="records"></div>
+      </div>
+
+      <div id="menu" class="themable hidden view">
+        <div class="setting showlocks prompttoggle">
+          <span class="icon material-icons">visibility</span>
+          <span data-translation="display_locks">Display Locks</span>
+          <div class="md-toggle">
+            <input type="checkbox" id="showlocks">
+            <label for="showlocks"></label>
+          </div>
+        </div>
+        <div class="setting vault"><span class="icon material-icons">lock</span> <span data-translation="Data_Vault">Vault</span></div>
+        <div class="setting console hidden"><span class="icon material-icons">web</span> <span data-translation="header.admin">Admin Console</span></div>
+        <div class="setting options"><span class="icon material-icons">settings</span> <span data-translation="Settings">Settings</span></div>
+        <div class="setting help"><span class="icon material-icons">help_outline</span> <span data-translation="QuickStartGuide">Quick Start Guide</span></div>
+        <div class="setting logout"><span class="icon material-icons">power_settings_new</span> <span data-translation="LogoutOfKeeper">Logout of Keeper</span></div>
+      </div>
+
+      <div id="settings" class="themable hidden view">
+        <div class="view-header" data-translation="Settings">Settings</div>
+
+        <div class="setting hoverlocks prompttoggle">
+          <span class="icon material-icons">pan_tool</span>
+          <span class="setting-name" data-translation="hover_locks">Hover Locks</span>
+          <div class="indicator"></div>
+        </div>
+
+        <div class="setting prompttologin prompttoggle">
+          <span class="icon material-icons">chat_bubble</span>
+          <span class="setting-name" data-translation="prompt_to_login">Prompt to Login</span>
+          <div class="indicator"></div>
+        </div>
+
+        <div class="setting prompttodisable prompttoggle">
+          <span class="icon material-icons">report_problem</span>
+          <span class="setting-name" data-translation="prompt_to_disable">Prompt to Disable</span>
+          <div class="indicator"></div>
+        </div>
+
+        <!-- <div class="setting prompttoonlyloginfields prompttoggle">
+          <span class="icon material-icons">chat_bubble</span>
+          <span class="setting-name" data-translation="">Only Login Fields</span>
+          <div class="indicator"></div>
+        </div> -->
+
+        <div class="setting prompttofill prompttoggle">
+          <span class="icon material-icons">input</span>
+          <span class="setting-name" data-translation="prompt_to_fill">Prompt to Fill</span>
+          <div class="indicator"></div>
+        </div>
+
+        <div class="setting autosubmit prompttoggle">
+          <span class="icon material-icons">launch</span>
+          <span class="setting-name" data-translation="auto_submit">Auto Submit</span>
+          <div class="indicator"></div>
+        </div>
+
+        <div class="setting prompttosave prompttoggle">
+          <span class="icon material-icons">save</span>
+          <span class="setting-name" data-translation="prompt_to_save">Prompt to Save</span>
+          <div class="indicator"></div>
+        </div>
+
+        <div class="setting prompttochange prompttoggle">
+          <span class="icon material-icons">loop</span>
+          <span class="setting-name" data-translation="promtp_to_change">Prompt to Change</span>
+          <div class="indicator"></div>
+        </div>
+
+        <div class="setting matchonsubdomain prompttoggle">
+          <span class="icon material-icons">language</span>
+          <span class="setting-name" data-translation="match_on_subdomain">Match on Subdomain</span>
+          <div class="indicator"></div>
+        </div>
+
+        <hr>
+
+        <div class="setting changelocationprompt">
+          <span class="icon material-icons">border_right</span>
+          <span class="setting-name" data-translation="prompt_appearance">Prompt Appearance</span>
+        </div>
+
+        <div class="setting themes">
+          <span class="icon material-icons">collections</span>
+          <span data-translation="Themes">Themes</span>
+        </div>
+
+        <div class="setting timer">
+          <span class="icon material-icons">timer</span>
+          <span data-translation="LogoutTimer">Logout Timer</span>
+        </div>
+
+        <div id="restore-default" data-translation="restore_defalt_settings">Restore Default Settings</div>
+
+      </div>
+
+      <div id="lock-settings" class="themable hidden settings-pane view">
+        <div class="setting hoverlocks prompttoggle">
+          <span class="icon material-icons">pan_tool</span>
+          <span data-translation="hover_locks">Hover Locks</span>
+          <div class="md-toggle">
+            <input type="checkbox" id="hoverlocks">
+            <label for="hoverlocks"></label>
+          </div>
+        </div>
+        <div class="description"><span data-translation="prompt_to_hover_locks_desc">Only show Keeper lock icons when hovering your mouse over the field.</span></div>
+      </div>
+
+      <div id="login-prompt-settings" class="themable hidden settings-pane view">
+        <div class="setting prompttologin prompttoggle">
+          <span class="icon material-icons">chat_bubble</span>
+          <span data-translation="prompt_to_login">Prompt to Login</span>
+          <div class="md-toggle">
+            <input type="checkbox" id="prompttologin">
+            <label for="prompttologin"></label>
+          </div>
+        </div>
+        <div class="description"><span data-translation="prompt_to_login_desc">If you're logged out of Keeper, you'll be reminded to sign in to Keeper when visiting a website login screen.</span></div>
+      </div>
+
+      <div id="change-location-prompt-settings" class="themable settings-pane hidden">
+        <div id="containerforpromptlocation" class="top-right"></div>
+        <div id="header-for-dropdown-prompt-appearance" data-translation="location">Location</div>
+        <div class="cs-select cs-skin-elastic">
+          <span class="cs-placeholder">Select a Location</span>
+          <div class="cs-options">
+            <ul>
+              <li class="cs-selected" data-value="top-left">
+                <span data-translation="top_left">Top-Left</span>
+              </li>
+              <li class="cs-selected active" data-value="top-right">
+                <span data-translation="top_right">Top-Right</span>
+              </li>
+              <li class="cs-selected" data-value="bottom-left">
+                <span data-translation="bottom_left">Bottom-Left</span>
+              </li>
+              <li class="cs-selected" data-value="bottom-right">
+                <span data-translation="bottom_right">Bottom-Right</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="header-for-checkbox-prompt-appearance">
+          <div data-translation="animation">Animation</div>
+          <div class="choose-transition-effect">
+            <label class="choose-transition-effect-checkbox-container">
+              <input type="checkbox" data-value="fade" style="margin:0px;height:16px;display:none;" />
+              <div class="inactive"></div>
+              <span data-translation="fade_in">Fade in</span>
+            </label>
+            <label class="choose-transition-effect-checkbox-container">
+              <input type="checkbox" data-value="slide" style="margin:0px;height:16px;display:none;" />
+              <div class="active"></div>
+              <span data-translation="slide_in">Slide in</span>
+            </label>
+            <label class="choose-transition-effect-checkbox-container">
+              <input type="checkbox" data-value="none" style="margin:0px;height:16px;display:none;" />
+              <div class="inactive"></div>
+              <span data-translation="no_animation">No animation</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div id="disable-prompt-settings" class="themable hidden settings-pane view">
+        <div class="setting prompttodisable prompttoggle">
+          <span class="icon material-icons">report_problem</span>
+          <span data-translation="prompt_to_disable">Prompt to Disable</span>
+          <div class="md-toggle">
+            <input type="checkbox" id="prompttodisable">
+            <label for="prompttodisable"></label>
+          </div>
+        </div>
+        <div class="description"><span data-translation="prompt_to_disable_desc">This will remind you that Keeperfill is disabled because it could possibly slow down that page.</span></div>
+      </div>
+
+      <!-- <div id="only-login-fields-prompt-settings" class="themable hidden settings-pane view">
+        <div class="setting prompttoonlyloginfields prompttoggle">
+          <span class="icon material-icons">chat_bubble</span>
+          <span data-translation="prompt_to_onlyloginfields">Only Show Login Fields</span>
+          <div class="md-toggle">
+            <input type="checkbox" id="prompttoonlyloginfields">
+            <label for="prompttoonlyloginfields"></label>
+          </div>
+        </div>
+        <div class="description"><span data-translation="prompt_to_disable_desc">This will make it so only Login Fields will have locks.</span></div>
+      </div> -->
+
+      <div id="fill-prompt-settings" class="themable hidden settings-pane view">
+        <div class="setting prompttofill prompttoggle">
+          <span class="icon material-icons">input</span>
+          <span data-translation="prompt_to_fill">Prompt to Fill</span>
+          <div class="md-toggle">
+            <input type="checkbox" id="prompttofill">
+            <label for="prompttofill"></label>
+          </div>
+        </div>
+        <div class="description"><span data-translation="prompt_to_fill_desc">When visiting a website login screen, Keeper will ask you to automatically login with your saved password.</span></div>
+      </div>
+
+      <div id="auto-submit-settings" class="themable hidden settings-pane view">
+        <div class="setting autosubmit prompttoggle">
+          <span class="icon material-icons">launch</span>
+          <span data-translation="auto_submit">Auto Submit</span>
+          <div class="md-toggle">
+            <input type="checkbox" id="autosubmit">
+            <label for="autosubmit"></label>
+          </div>
+        </div>
+        <div class="description"><span data-translation="auto_submit_desc">After auto-filling your login, Keeper will automatically submit the website form and login to the website.</span></div>
+      </div>
+
+      <div id="save-prompt-settings" class="themable hidden settings-pane view">
+        <div class="setting prompttosave prompttoggle">
+          <span class="icon material-icons">save</span>
+          <span data-translation="prompt_to_save">Prompt to Save</span>
+          <div class="md-toggle">
+            <input type="checkbox" id="prompttosave">
+            <label for="prompttosave"></label>
+          </div>
+        </div>
+        <div class="description"><span data-translation="prompt_to_save_desc">When manually logging into a website with a new password, Keeper will ask you to save your password to your vault.</span></div>
+      </div>
+
+      <div id="change-prompt-settings" class="themable hidden settings-pane view">
+        <div class="setting prompttochange prompttoggle">
+          <span class="icon material-icons">loop</span>
+          <span data-translation="promtp_to_change">Prompt to Change</span>
+          <div class="md-toggle">
+            <input type="checkbox" id="prompttochange">
+            <label for="prompttochange"></label>
+          </div>
+        </div>
+        <div class="description"><span data-translation="prompt_to_change_desc">On "Change password" web pages, Keeper will automatically generate a new password and fill old and new password fields.</span></div>
+      </div>
+
+      <div id="match-on-subdomain-settings" class="themable hidden settings-pane view">
+        <div class="setting matchonsubdomain prompttoggle">
+          <span class="icon material-icons">language</span>
+          <span data-translation="match_on_subdomain">Match on Subdomain</span>
+          <div class="md-toggle">
+            <input type="checkbox" id="matchonsubdomain">
+            <label for="matchonsubdomain"></label>
+          </div>
+        </div>
+        <div class="description"><span data-translation="match_on_subdomain_desc">Display records to autofill based on strict subdomain matching.</span></div>
+      </div>
+
+      <div id="themes" class="themable settings-pane hidden">
+        <form>
+          <div class="title">
+            <span class="material-icons md-18 icon">collections</span>
+            <span data-translation="Themes">Themes</span>
+          </div>
+          <div class="content">
+            <div class="preview">
+              <div class="row">
+                <div class="blue_and_green" data-translation="ThemeColorBlueGreen" tooltip="Blue and Green"></div>
+                <div class="red_and_blue" data-translation="ThemeColorRedBlue" tooltip="Red and Blue"></div>
+                <div class="burgundy" data-translation="ThemeColorBurgundy" tooltip="Burgundy"></div>
+                <div class="classic" data-translation="ThemeColorClassic" tooltip="Classic" id="default-theme-color"></div>
+                <div class="flame tooltip-left" data-translation="ThemeColorFlame" tooltip="Flame"></div>
+              </div>
+              <div class="row">
+                <div class="green" data-translation="ThemeColorGreen" tooltip="Green"></div>
+                <div class="deep_ocean" data-translation="ThemeColorDeepOcean" tooltip="Deep Ocean"></div>
+                <div class="glam" data-translation="ThemeColorGlam" tooltip="Glam"></div>
+                <div class="phoenix" data-translation="ThemeColorPhoenix" tooltip="Phoenix"></div>
+                <div class="aluminum tooltip-left" data-translation="ThemeColorAluminum" tooltip="Aluminum"></div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="timer" class="themable settings-pane hidden">
+        <form>
+          <div class="title">
+            <span class="material-icons md-18 icon">timer</span>
+            <span data-translation="LogoutTimer">Logout Timer</span>
+            <div class="md-toggle">
+              <input type="checkbox" id="enablelogouttimer">
+              <label for="enablelogouttimer"></label>
+            </div>
+          </div>
+          <div class="content">
+            <div data-translation="KeeperAskLoginIntervalQuestion">Automatically logout of Keeper in:</div>
+            <div class="disabled-block">
+              <input id="logouttime" type="number" disabled spellcheck="false">
+              <span data-translation="Minutes">Minutes</span>
+            </div>
+            <button class="pretty large save" data-translation="Save" disabled>Save</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="terms" class="hidden">
+        <div class="headline" data-translation="index.secure">Keeper is a secure and easy-to-use password manager and digital vault.</div>
+        <div class="blurb hidden" data-translation="desktop_installer_language">Keeper is free to use for local password management. Premium features such as Cloud Storage, Backup, Sharing, Web App and Sync are free for 30-days and require a paid annual subscription thereafter. Cloud features require an internet connection.</div>
+        <div class="moreless">
+          <span data-translation="fastfill_more">More</span>
+          <span class="material-icons">expand_more</span>
+        </div>
+        <div class="checkboxes">
+          <div class="accept terms">
+            <div data-translation="terms">Terms of Use</div>
+            <label>
+              <span class="material-icons checkbox">check_box_outline_blank</span>
+              <span data-translation="Accept">Accept</span>
+            </label>
+          </div>
+          <div class="accept privacy">
+            <div data-translation="privacy">Privacy Policy</div>
+            <label>
+              <span class="material-icons checkbox">check_box_outline_blank</span>
+              <span data-translation="Accept">Accept</span>
+            </label>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="pretty gold" data-translation="tour_continue" disabled>Continue</button>
+        </div>
+      </div>
+
+      <template id="loading_template">
+        <div id="loading_overlay" class="overlay light"></div>
+        <div id="loading">
+          <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+              <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"/>
+            </svg>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <script src="../javascript/translation.js"></script>
+    <script src="browser_action.js"></script>
+    <script src="messaging.js"></script>
+  </body>
+</html>

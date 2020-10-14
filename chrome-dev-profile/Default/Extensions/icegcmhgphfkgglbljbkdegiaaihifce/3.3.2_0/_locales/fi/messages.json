@@ -1,0 +1,269 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "URLringtone": {
+      "message": ""
+   },
+   "_10sec": {
+      "message": "10 sekuntia"
+   },
+   "_12hour": {
+      "message": "Käytä 12 tunnin kelloa (Oletus on 24 tunnin kello)"
+   },
+   "_1min": {
+      "message": "1 minuutti"
+   },
+   "_1sec": {
+      "message": "1 sekunti"
+   },
+   "_2sec": {
+      "message": "2 sekuntia"
+   },
+   "_30sec": {
+      "message": "30 sekuntia"
+   },
+   "_5sec": {
+      "message": "5 sekuntia"
+   },
+   "about": {
+      "message": "Tietoja"
+   },
+   "alarm": {
+      "message": "Herätyskello"
+   },
+   "alarmandringtone": {
+      "message": ""
+   },
+   "allpurpose": {
+      "message": ""
+   },
+   "am": {
+      "message": ""
+   },
+   "analog": {
+      "message": "Analogista kelloa"
+   },
+   "analogmsg": {
+      "message": "(Noin 4 KB sekunnissa.)"
+   },
+   "apply": {
+      "message": "Toteuta"
+   },
+   "calendar": {
+      "message": "Kalenteri"
+   },
+   "cancel": {
+      "message": "Peruuta"
+   },
+   "chat": {
+      "message": "Chat box"
+   },
+   "close": {
+      "message": "Sulje"
+   },
+   "cmtmsg": {
+      "message": "Kommentteja? Raportoi bugista? Paina tästä!"
+   },
+   "comment": {
+      "message": "Kommentti"
+   },
+   "countdown": {
+      "message": "Sekuntikello"
+   },
+   "ctxcmt": {
+      "message": "Vikailmoitus / Kommentit"
+   },
+   "ctxhide": {
+      "message": ""
+   },
+   "day_0": {
+      "message": "Sunnuntai"
+   },
+   "day_1": {
+      "message": "Maanantai"
+   },
+   "day_2": {
+      "message": "Tiistai"
+   },
+   "day_3": {
+      "message": "Keskiviikko"
+   },
+   "day_4": {
+      "message": "Torstai"
+   },
+   "day_5": {
+      "message": "Perjantai"
+   },
+   "day_6": {
+      "message": "Lauantai"
+   },
+   "defaultringtone": {
+      "message": "Oletus ringtone"
+   },
+   "digital": {
+      "message": "Digitaalista kelloa"
+   },
+   "digitalmsg": {
+      "message": "(Varoitus:  Digitaalisen kellon käyttäminen vie enemmän muistia kuin analogisen.)"
+   },
+   "display": {
+      "message": "Näytä"
+   },
+   "enablehourlytimeannounce": {
+      "message": "Ota käyttöön jokatuntinen ajan ilmoitus! (Työpöytäilmoitus)"
+   },
+   "evening": {
+      "message": "Oletko vielä syönyt päivällistä? "
+   },
+   "extDes": {
+      "message": "An extension fully loaded with tons of useful time-related features... But the best part is, it is totally COOL."
+   },
+   "extName": {
+      "message": "Cool Clock"
+   },
+   "forum": {
+      "message": ""
+   },
+   "hourlytimeannounce": {
+      "message": "Jokatuntinen ajan ilmoitus"
+   },
+   "max999": {
+      "message": "(Suurin arvo: 999)"
+   },
+   "memmsg": {
+      "message": "Yleensä animaatio \"piirtää\" uuden kuvan joka sekunti, joten normaalisti se vie paljon muistia jonkin ajan sisällä, sillä aikaa kun yritän pienentää sitä."
+   },
+   "midnight": {
+      "message": "Mitä kuuluu?"
+   },
+   "month_1": {
+      "message": "Tammi"
+   },
+   "month_10": {
+      "message": "Loka"
+   },
+   "month_11": {
+      "message": "Marras"
+   },
+   "month_12": {
+      "message": "Joulu"
+   },
+   "month_2": {
+      "message": "Helmi"
+   },
+   "month_3": {
+      "message": "Maalis"
+   },
+   "month_4": {
+      "message": "Huhti"
+   },
+   "month_5": {
+      "message": "Touko"
+   },
+   "month_6": {
+      "message": "Kesä"
+   },
+   "month_7": {
+      "message": "Heinä"
+   },
+   "month_8": {
+      "message": "Elo"
+   },
+   "month_9": {
+      "message": "Syys"
+   },
+   "morning": {
+      "message": "Hyvää huomenta!"
+   },
+   "night": {
+      "message": "Aika mennä nukkumään."
+   },
+   "none": {
+      "message": "Ei mitään"
+   },
+   "noon": {
+      "message": "Mukava nähdä näin iltapäivällä!"
+   },
+   "noscroll": {
+      "message": "Älä käytä rullausefektiä (Näyttää 4 numeroa rullamisen sijaan)"
+   },
+   "notflash": {
+      "message": "(En ole Flash-kello!)"
+   },
+   "notitimeannounce": {
+      "message": "Jokatuntinen ajan ilmoitus"
+   },
+   "notitimeis": {
+      "message": "Kello on"
+   },
+   "notsaved": {
+      "message": ""
+   },
+   "pm": {
+      "message": ""
+   },
+   "saved": {
+      "message": "Valinnat tallennetaan."
+   },
+   "seconds": {
+      "message": "sekuntia"
+   },
+   "setalarm": {
+      "message": ""
+   },
+   "settings": {
+      "message": "Asetukset"
+   },
+   "showbadgeclock": {
+      "message": "Näytä aika kellon alla"
+   },
+   "showiconclock": {
+      "message": "Näytä kello kuvakkeessa"
+   },
+   "shownotificationfor": {
+      "message": "Kuinka kauan ilmoitus näytetään?"
+   },
+   "showtodowhenopen": {
+      "message": "Hälytä tehtävistä työpöytäilmoituksessa selaimen ollessa päällä."
+   },
+   "showupdate": {
+      "message": "Näytä päivityssivu jokaisen lisäosan päivityksen jälkeen."
+   },
+   "stat": {
+      "message": "Tilastot"
+   },
+   "timeis": {
+      "message": "Kello on: "
+   },
+   "timer": {
+      "message": "Sekuntikello"
+   },
+   "tools": {
+      "message": ""
+   },
+   "updateiconevery": {
+      "message": "Päivitä kuvake: "
+   },
+   "updateiconeverymsg": {
+      "message": "(Mitä pidempi tämä on, sitä vähemmän muistia tämä laajennus vie.)"
+   },
+   "useanalog": {
+      "message": "Käytä analogista kelloa"
+   },
+   "usedarkmode": {
+      "message": "Käytä tummaa teemaa (Heille, jotka käyttävät tummaa teemaa, tämä lisää puolinäkymättömän kuplan numeroiden alle jotta ajan näkeminen on helpompaa)"
+   },
+   "usedigital": {
+      "message": "Käytä digitaalista kelloa"
+   },
+   "version": {
+      "message": "Versio"
+   },
+   "viewsavedalarm": {
+      "message": "Näytä tallennetut hälytykset"
+   },
+   "whatsnew": {
+      "message": "Näytä, mitä uutta tässä versiossa on"
+   }
+}

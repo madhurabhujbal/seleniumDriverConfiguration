@@ -1,0 +1,269 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "URLringtone": {
+      "message": ""
+   },
+   "_10sec": {
+      "message": "10 sekunder"
+   },
+   "_12hour": {
+      "message": "Bruk 12-timerssystem (standard er 24-timerssystem)"
+   },
+   "_1min": {
+      "message": "1 minutt"
+   },
+   "_1sec": {
+      "message": "1 sekund"
+   },
+   "_2sec": {
+      "message": "2 sekunder"
+   },
+   "_30sec": {
+      "message": "30 sekunder"
+   },
+   "_5sec": {
+      "message": "5 sekunder"
+   },
+   "about": {
+      "message": "Om"
+   },
+   "alarm": {
+      "message": "Kommentar"
+   },
+   "alarmandringtone": {
+      "message": ""
+   },
+   "allpurpose": {
+      "message": ""
+   },
+   "am": {
+      "message": ""
+   },
+   "analog": {
+      "message": "Analogklokke"
+   },
+   "analogmsg": {
+      "message": "(Omtrent 4 KB per sekund)"
+   },
+   "apply": {
+      "message": "Bruk"
+   },
+   "calendar": {
+      "message": ""
+   },
+   "cancel": {
+      "message": "Avbryt"
+   },
+   "chat": {
+      "message": "Chat box"
+   },
+   "close": {
+      "message": "Lukk"
+   },
+   "cmtmsg": {
+      "message": "Har du en kommentar eller en feilrapport? Trykk her!"
+   },
+   "comment": {
+      "message": "Kommentar"
+   },
+   "countdown": {
+      "message": "Nedtellingstidtaker"
+   },
+   "ctxcmt": {
+      "message": "Bug rapport / Comments"
+   },
+   "ctxhide": {
+      "message": ""
+   },
+   "day_0": {
+      "message": "Søndag"
+   },
+   "day_1": {
+      "message": "Mandag"
+   },
+   "day_2": {
+      "message": "Tirsdag"
+   },
+   "day_3": {
+      "message": "Onsdag"
+   },
+   "day_4": {
+      "message": "Torsdag"
+   },
+   "day_5": {
+      "message": "Fredag"
+   },
+   "day_6": {
+      "message": "Lørdag"
+   },
+   "defaultringtone": {
+      "message": "Standard ringetone"
+   },
+   "digital": {
+      "message": "Digitalklokke"
+   },
+   "digitalmsg": {
+      "message": "(Advarsel:  Digitalklokke bruker mye minne.)"
+   },
+   "display": {
+      "message": "Visning"
+   },
+   "enablehourlytimeannounce": {
+      "message": "Slå på notifikasjon for hver hele time"
+   },
+   "evening": {
+      "message": "Har du spist middag?"
+   },
+   "extDes": {
+      "message": "An extension fully loaded with tons of useful time-related features... But the best part is, it is totally COOL."
+   },
+   "extName": {
+      "message": "Cool Clock"
+   },
+   "forum": {
+      "message": ""
+   },
+   "hourlytimeannounce": {
+      "message": "Klokka er nå"
+   },
+   "max999": {
+      "message": "(Maks:  999)"
+   },
+   "memmsg": {
+      "message": "Animasjon «tegner» et nytt bilde per sekund, så det vil ta opp mye minne, men vi prøver å redusere det."
+   },
+   "midnight": {
+      "message": "Hva skjer?"
+   },
+   "month_1": {
+      "message": "Jan"
+   },
+   "month_10": {
+      "message": "Okt"
+   },
+   "month_11": {
+      "message": "Nov"
+   },
+   "month_12": {
+      "message": "Des"
+   },
+   "month_2": {
+      "message": "Feb"
+   },
+   "month_3": {
+      "message": "Mar"
+   },
+   "month_4": {
+      "message": "Apr"
+   },
+   "month_5": {
+      "message": "Mai"
+   },
+   "month_6": {
+      "message": "Jun"
+   },
+   "month_7": {
+      "message": "Jul"
+   },
+   "month_8": {
+      "message": "Aug"
+   },
+   "month_9": {
+      "message": "Sep"
+   },
+   "morning": {
+      "message": "God morgen!"
+   },
+   "night": {
+      "message": "Dags for senga."
+   },
+   "none": {
+      "message": "Ingen"
+   },
+   "noon": {
+      "message": "God ettermiddag!"
+   },
+   "noscroll": {
+      "message": "Ikke brukk rulleeffekt (vis 4 tall i stedet for rulling)"
+   },
+   "notflash": {
+      "message": "(Jeg er ikke en Flash-klokke!)"
+   },
+   "notitimeannounce": {
+      "message": "Klokka er nå..."
+   },
+   "notitimeis": {
+      "message": "Klokka er"
+   },
+   "notsaved": {
+      "message": ""
+   },
+   "pm": {
+      "message": ""
+   },
+   "saved": {
+      "message": "Lagret."
+   },
+   "seconds": {
+      "message": "sekunder"
+   },
+   "setalarm": {
+      "message": ""
+   },
+   "settings": {
+      "message": "Alternativer"
+   },
+   "showbadgeclock": {
+      "message": "Vis klokka på merket"
+   },
+   "showiconclock": {
+      "message": "Vis klokka på ikonet"
+   },
+   "shownotificationfor": {
+      "message": "Vis i: "
+   },
+   "showtodowhenopen": {
+      "message": "Varsle om oppgaver når netteleseren kjøres"
+   },
+   "showupdate": {
+      "message": "Vis oppdateringssiden hver gang utvidelsen har blitt oppdatert"
+   },
+   "stat": {
+      "message": "Statistikk"
+   },
+   "timeis": {
+      "message": "Klokka er nå: "
+   },
+   "timer": {
+      "message": ""
+   },
+   "tools": {
+      "message": ""
+   },
+   "updateiconevery": {
+      "message": "Oppdater ikonet hver: "
+   },
+   "updateiconeverymsg": {
+      "message": "(Jo lenger intervall, jo lettere er utvidelsen.)"
+   },
+   "useanalog": {
+      "message": "Bruk analogklokke"
+   },
+   "usedarkmode": {
+      "message": "Bruk tilpasninger for mørkt tema"
+   },
+   "usedigital": {
+      "message": "Bruk digitalklokke"
+   },
+   "version": {
+      "message": "Versjon"
+   },
+   "viewsavedalarm": {
+      "message": "Vis lagrede alarmer"
+   },
+   "whatsnew": {
+      "message": "Nytt i denne versjonen"
+   }
+}

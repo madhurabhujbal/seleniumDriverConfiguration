@@ -1,0 +1,1492 @@
+/*
+ *
+ */
+/* @import "keeper_font_secret.css"; */
+/* @import "keeper_secret_font.css";
+/* @import "keeper_secret_font_edge.css"; */
+@font-face {
+  font-family: keepersec;
+  src: url('keepersecret.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: KeeperSecretEdge;
+  src: url('password-dots.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+} */
+input::-ms-clear, input::-ms-reveal {
+    display: none;
+}
+
+keeper-extension,
+keeper-extension-prompt,
+keeper-extension-simple,
+keeper-extension-simple-disabled {
+  /* "Default" theme is "classic" */
+  background-image: linear-gradient(-45deg, #02719D 0, #004762 100%);
+  background-image: -webkit-linear-gradient(-45deg, #02719D 0, #004762 100%);
+  background-image: -moz-linear-gradient(-45deg, #02719D 0, #004762 100%);
+
+  border-radius: 2px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+
+  box-sizing: border-box;
+  display: inline-block;
+  filter: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 12px;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  text-align: left;
+  text-transform: initial;
+  word-wrap: break-word;
+  height: auto !important;
+  width: 274px;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+keeper-extension::before,
+keeper-extension-prompt::before,
+keeper-extension-simple::before,
+keeper-extension-simple-disabled::before {
+  content: '';
+  position: absolute;
+
+  border-bottom: 8px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+
+  top: -8px;
+  display: none;
+}
+
+keeper-positionable-popup {
+  /* z-index: 2147483647 !important; /* 32 bit signed, above all the things!
+  height: 220px !important;
+  width: 294px !important;
+
+  position: fixed !important; */
+
+  -moz-user-select: none !important;
+  -webkit-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+keeper-positionable-popup.repositioning {
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+keeper-positionable-popup iframe {
+  border: none;
+  pointer-events: auto !important;
+}
+
+keeper-extension.keeper-float::before,
+keeper-extension-prompt.keeper-float::before,
+keeper-extension-simple.keeper-float::before,
+keeper-extension-simple-disabled.keeper-float::before {
+  display: none;
+}
+keeper-extension.keeper-right::before,
+keeper-extension-prompt.keeper-right::before,
+keeper-extension-simple.keeper-right::before,
+keeper-extension-simple-disabled.keeper-right::before {
+  left: 12px;
+  right: initial;
+  display: block;
+}
+keeper-extension.keeper-left::before,
+keeper-extension-prompt.keeper-left::before,
+keeper-extension-simple.keeper-left::before,
+keeper-extension-simple-disabled.keeper-left::before {
+  left: initial;
+  right: 12px;
+  display: block;
+}
+
+keeper-error-message {
+  color:#E0090C;
+  padding: 4px 0px 0px 0px;
+  white-space: pre-line;
+  -webkit-transform: translateZ(0);
+}
+
+#keeper-extension svg {
+/*  height: inherit;
+  width: inherit;
+  min-height: inherit;
+  min-width: inherit;*/
+}
+
+#keeper-extension-popup svg > path,
+#keeper-extension svg > path {
+  /*fill: initial;*/
+}
+
+keeper-input,
+keeper-favicon keeper-div,
+keeper-mode-selector keeper-div,
+keeper-extension-content keeper-div,
+keeper-extension-no-record keeper-div,
+keeper-button.keeper-button-transparent {
+  color: #eee;
+}
+keeper-favicon path,
+keeper-extension-content path,
+keeper-extension-no-record path {
+  fill: #eee;
+}
+keeper-folder-autocomplete path {
+  fill: #3b4546;
+}
+keeper-folder-autocomplete keeper-div {
+  color: #333;
+}
+
+keeper-extension-simple,
+keeper-extension-simple-disabled {
+  position: fixed;
+  background: #fff !important;
+}
+keeper-extension-simple path,
+keeper-extension-simple-disabled path {
+  fill: #000;
+}
+keeper-extension-simple > keeper-extension-content,
+keeper-extension-simple keeper-extension-no-record,
+keeper-extension-simple-disabled > keeper-extension-content,
+keeper-extension-simple-disabled keeper-extension-no-record {
+  flex-direction: column;
+}
+keeper-extension-simple > keeper-extension-content keeper-div,
+keeper-extension-simple keeper-extension-no-record keeper-div,
+keeper-extension-simple-disabled > keeper-extension-content keeper-div,
+keeper-extension-simple-disabled keeper-extension-no-record keeper-div {
+  color: #000 !important;
+}
+keeper-extension-simple > keeper-extension-content > keeper-div:nth-child(2),
+keeper-extension-simple > keeper-extension-no-record > keeper-div:nth-child(2),
+keeper-extension-simple-disabled > keeper-extension-content > keeper-div:nth-child(2),
+keeper-extension-simple-disabled > keeper-extension-no-record > keeper-div:nth-child(2) {
+  margin: 10px 0 !important;
+}
+
+keeper-extension-prompt keeper-extension-content,
+keeper-extension-prompt keeper-extension-no-record {
+  flex-direction: column;
+}
+keeper-extension-prompt keeper-extension-content > keeper-div,
+keeper-extension-prompt keeper-extension-no-record > keeper-div {
+  display: flex;
+  margin-bottom: 12px;
+  justify-content: flex-end;
+}
+keeper-extension-prompt keeper-extension-content > keeper-div.inputs,
+keeper-extension-prompt keeper-extension-no-record > keeper-div.inputs {
+  flex-direction: column;
+}
+keeper-extension-prompt keeper-extension-content > keeper-div.inputs keeper-input,
+keeper-extension-prompt keeper-extension-no-record > keeper-div.inputs keeper-input {
+  font-size: 14px;
+  margin-bottom: 11px !important;
+  width: 235px;
+  min-height: 25px;
+  max-height: 100px;
+  white-space: inherit;
+}
+keeper-extension-prompt keeper-extension-content > keeper-div.buttons:last-child,
+keeper-extension-prompt keeper-extension-no-record > keeper-div.buttons:last-child {
+  flex-direction: row;
+}
+keeper-extension-prompt keeper-extension-content > keeper-div:nth-child(2),
+keeper-extension-prompt keeper-extension-no-record > keeper-div:nth-child(2) {
+  justify-content: flex-end;
+}
+keeper-extension-prompt keeper-extension-content > keeper-div:nth-child(2) keeper-button.keeper-button-transparent,
+keeper-extension-prompt keeper-extension-no-record > keeper-div:nth-child(2) keeper-button.keeper-button-transparent  {
+  /*opacity: 0.6;*/
+}
+keeper-extension-prompt keeper-extension-content > keeper-div:last-child,
+keeper-extension-prompt keeper-extension-no-record > keeper-div:last-child {
+  flex-direction: column;
+}
+
+keeper-header-placeholder {
+  background-color: #fff;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  display: flex;
+  height: 44px;
+}
+
+keeper-header {
+  align-items: center;
+  background-color: #fff;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  display: flex;
+  padding: 10px !important;
+  width: 274px !important;
+  box-sizing: border-box !important;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2147483647;
+}
+keeper-header keeper-logo {
+  width: 78px;
+  display: flex;
+  flex-grow: 2;
+}
+keeper-header > keeper-div {
+  display: flex;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 12px;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+keeper-header > keeper-div > * {  /* icon buttons */
+  margin: 0 8px !important;
+}
+keeper-header > keeper-iconbutton-close {
+  margin: 0px;
+  cursor:pointer;
+}
+
+#keeper-extension-popup keeper-header keeper-iconbutton-edit svg {
+  height: 20px !important;
+  margin: 2px !important;
+  width: 20px !important;
+}
+
+keeper-button {
+  background-color: #ffc600;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 20px !important;
+  margin: 0 10px;
+  min-width: 70px;
+  outline: none;
+  padding: 0px 10px !important;
+  text-align: center;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+keeper-button.keeper-button-transparent {
+  background-color: transparent;
+  border: 0;
+}
+keeper-button.keeper-button-active {
+  background-color: #ffd600;
+  color: #333;
+}
+keeper-button.keeper-button-transparent.keeper-button-active {
+  background-color: transparent;
+  opacity: 1.0;
+}
+keeper-button.keeper-button-disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+keeper-button:last-child {
+  margin-right: 0;
+}
+
+keeper-checkbox {
+  cursor: pointer;
+  height: 18px;
+  margin-left: -2px !important;
+  width: 18px;
+}
+keeper-checkbox svg {
+  position: relative;
+}
+
+keeper-checkbox-set {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 18px;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+keeper-checkbox-set keeper-div {
+  margin: 0 4px !important;
+}
+
+keeper-close {
+  cursor: pointer;
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+#keeper-extension-popup keeper-close path {
+  fill: #333;
+}
+
+keeper-div {
+  color: #333;
+  display: flex;
+  line-height: normal;
+}
+
+keeper-edit-button {
+  border-radius: 14px;
+  cursor: pointer;
+  float: right;
+  height: 28px;
+  vertical-align: -5px;
+  width: 28px;
+}
+keeper-edit-button:hover {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}
+keeper-edit-button:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+keeper-edit-button svg {
+  margin: 2px !important;
+}
+
+keeper-error {
+  background-color: #fcc;
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  color: #d00;
+  left: 10px;
+  padding: 30px 15px 20px 15px !important;
+  position: absolute;
+  right: 10px;
+  top: 180px;
+  z-index: 1;
+}
+keeper-error keeper-iconbutton-close {
+  position: absolute !important;
+  top: 5px;
+  right: 5px;
+  cursor:pointer;
+}
+keeper-iconbutton-done {
+  height: 24px;
+  width: 24px;
+}
+keeper-iconbutton-close {
+  cursor:pointer;
+  height: 24px;
+  width: 24px;
+}
+
+keeper-favicon {
+  align-items: center;
+  color: #333;
+  display: flex;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
+  height: 36px;
+  padding: 2px 18px !important;
+  overflow: hidden;
+}
+keeper-favicon img,
+keeper-favicon keeper-favicon-placeholder {
+  height: 16px !important;
+  margin: 0 !important;
+  width: 16px !important;
+}
+keeper-favicon keeper-div {
+  margin: 0 5px !important;
+  overflow: hidden;
+}
+
+keeper-help-button {
+  cursor: pointer;
+}
+
+keeper-folder-autocomplete {
+  position: relative;
+}
+keeper-folder-autocomplete keeper-folder-list {
+  max-height: 235px;
+  overflow-x: auto;
+  top: 24px;
+}
+
+keeper-folder-list {
+  background-color: #fff;
+  box-shadow: 0 0 5px #999;
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: 10px;
+}
+keeper-folder-listitem {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  margin: 2px 0 !important;
+}
+keeper-folder-listitem:hover {
+  background-color: #eee;
+}
+keeper-folder-listitem * {
+  margin: 0 5px !important;
+}
+keeper-folder-listitem svg {
+  height: 18px;
+  width: 18px;
+}
+
+keeper-input {
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: default;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400 !important;
+  height: 24px;
+  line-height: 24px !important;
+  margin: 0 !important;
+  overflow:hidden;
+  padding: 0 !important;
+  white-space: nowrap;
+  width: 100%;
+
+  user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  border-bottom: 1px solid #aaa;
+}
+keeper-input span{
+  font-family:inherit !important;
+}
+keeper-input:focus {
+  outline: none;
+}
+keeper-input[contentEditable=true] {  
+  cursor: text;
+}
+
+keeper-link {
+  color: #390;
+  cursor: pointer;
+}
+keeper-link:hover {
+  text-decoration: underline;
+}
+
+#info-icon {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/info-24px.svg);
+}
+
+keeper-logo {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/ico-keeper-black.svg);
+  background-repeat: no-repeat;
+  background-size: 78px 24px;
+  display: block;
+  height: 24px;
+  width: 78px;
+}
+
+keeper-extension-content,
+keeper-extension-no-record {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18px !important;
+  position: relative;
+}
+
+keeper-content-options {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+keeper-content-options > keeper-div {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 10px !important;
+}
+keeper-content-options > keeper-div.disable {
+  justify-content: flex-end;
+}
+keeper-content-options > keeper-div keeper-iconbutton-find svg {
+  height: 20px !important;
+  margin: 2px ! important;
+  width: 20px !important;
+}
+keeper-content-options > keeper-div > keeper-div {
+  margin-left: 5px !important;
+}
+
+keeper-mode-selector svg {
+  height: 16px !important;
+  width: 16px !important;
+}
+keeper-mode-selector path {
+  fill: #666;
+}
+keeper-mode-selector .keeper-active path {
+  fill: #111;
+}
+/* tabs */
+keeper-mode-selector > keeper-div:nth-child(1) {
+  background: #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  flex-grow: 1;
+  padding-top: 9px !important;
+  text-align: center !important;
+}
+keeper-mode-selector > keeper-div:nth-child(1) > * {
+  width: 100% !important;
+}
+keeper-mode-selector > keeper-div:nth-child(1) .keeper-active {
+  border-bottom: 3px solid #cc9a2d;
+}
+/* banner */
+keeper-mode-selector > keeper-div:nth-child(2) {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px !important;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+keeper-password {
+  position: relative;
+  display: block;
+}
+keeper-password keeper-input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  font-family: monospace;
+  font-weight: 400 !important;
+  font-size: larger;
+  margin-bottom: 2px !important;
+  width: 165px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+keeper-password keeper-iconbutton-eyeball,
+keeper-password keeper-iconbutton-dice {
+  box-sizing: border-box;
+  display: block;
+
+  position: absolute !important;
+  top: 0;
+  right: 0;
+}
+keeper-record-editor keeper-password-label keeper-iconbutton-eyeball {
+  top: 24px;
+  right: 22px;
+}
+keeper-record-field keeper-iconbutton-eyeball,
+keeper-record-field-cvv keeper-iconbutton-eyeball,
+keeper-record-field-card keeper-iconbutton-eyeball,
+keeper-record-field-extra keeper-iconbutton-eyeball,
+keeper-record-field-totp keeper-iconbutton-eyeball {
+  align-self: center;
+  margin-left: 5px;
+
+  box-sizing: border-box;
+  display: block;
+}
+.keeper-rtl keeper-record-field keeper-iconbutton-eyeball,keeper-lock
+.keeper-rtl keeper-record-field-cvv keeper-iconbutton-eyeball,
+.keeper-rtl keeper-record-field-card keeper-iconbutton-eyeball,
+.keeper-rtl keeper-record-field-extra keeper-iconbutton-eyeball,
+.keeper-rtl keeper-record-field-totp keeper-iconbutton-eyeball,
+.keeper-rtl keeper-password keeper-iconbutton-eyeball,
+.keeper-rtl keeper-password keeper-iconbutton-dice {
+  right: initial;
+  left: 0;
+}
+
+keeper-password keeper-password-restriction {
+  color: #eee;
+  display: none;
+  font-size: 9px;
+}
+
+keeper-password keeper-password-privacy-screen {
+  color: #eee;
+  display: none;
+  font-size: 9px;
+  flex-direction: row;
+  align-items: center;  
+}
+
+keeper-password keeper-password-privacy-screen p {
+  font-size: 10px;
+  padding: 0px 4px;
+}
+
+keeper-password-strength {
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  position: relative;
+  width: 165px;
+}
+keeper-password-strength keeper-div {
+  border-radius: 2px;
+  height: 100%;
+  position: absolute;
+  transition: width 1s, background-color 1s;
+  width: 0;
+}
+
+keeper-password-options > keeper-div:first-child {
+  margin: 0;
+}
+keeper-password-options > keeper-div:last-child {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+keeper-password-options keeper-input {
+  height: 26px;
+  line-height: 18px;
+  margin: 0;
+  width: 50px;
+}
+
+keeper-record {
+  display: inline-block;
+  width: 100%;
+
+  user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+}
+keeper-record keeper-record-field-address,
+keeper-record keeper-record-field-cvv,
+keeper-record keeper-record-field-card,
+keeper-record keeper-record-field-login,
+keeper-record keeper-record-field-password,
+keeper-record keeper-record-field-extra,
+keeper-record keeper-record-field-totp,
+keeper-record keeper-record-field {
+  border-top: 1px solid #fff;
+  display: flex;
+  margin-top: 10px;
+  padding-top: 10px;
+  white-space: pre-wrap;
+  width: 100%;
+}
+keeper-record keeper-record-field-address,
+keeper-record keeper-record-field-card,
+keeper-record keeper-record-field-login {
+  border-top: 0;
+  cursor: pointer;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+keeper-record keeper-record-field-address > keeper-div,
+keeper-record keeper-record-field-cvv > keeper-div,
+keeper-record keeper-record-field-card > keeper-div,
+keeper-record keeper-record-field-login > keeper-div,
+keeper-record keeper-record-field-password > keeper-div,
+keeper-record keeper-record-field-extra > keeper-div,
+keeper-record keeper-record-field-totp > keeper-div,
+keeper-record keeper-record-field > keeper-div {
+  flex-direction: column;
+  width: 100%;
+}
+keeper-record keeper-record-field-totp > keeper-div {
+  justify-content: center;
+}
+/* label */
+keeper-record keeper-record-field-address > keeper-div > keeper-div:nth-child(1),
+keeper-record keeper-record-field-cvv > keeper-div > keeper-div:nth-child(1),
+keeper-record keeper-record-field-card > keeper-div > keeper-div:nth-child(1),
+keeper-record keeper-record-field-login > keeper-div > keeper-div:nth-child(1),
+keeper-record keeper-record-field-password > keeper-div > keeper-div:nth-child(1),
+keeper-record keeper-record-field-extra > keeper-div > keeper-div:nth-child(1),
+keeper-record keeper-record-field-totp > keeper-div > keeper-div:nth-child(1),
+keeper-record keeper-record-field > keeper-div > keeper-div:nth-child(1) {
+  margin-bottom: 4px !important;
+  opacity: 0.7;
+}
+/* field */
+keeper-record keeper-record-field > keeper-div > keeper-div:nth-child(2),
+keeper-record keeper-record-field-extra > keeper-div > keeper-div:nth-child(2),
+keeper-record keeper-record-field-totp > keeper-div > keeper-div:nth-child(2) {
+  max-height: 100px;
+
+  overflow: auto;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  word-wrap: break-word;  /* Edge */
+}
+/* totp field */
+keeper-record keeper-record-field-totp > keeper-div > keeper-div:nth-child(2) {
+  font-size: large;
+}
+/* login field */
+keeper-record keeper-record-field-address > keeper-div > keeper-div:nth-child(2),
+keeper-record keeper-record-field-card > keeper-div > keeper-div:nth-child(2),
+keeper-record keeper-record-field-login > keeper-div > keeper-div:nth-child(2) {
+  flex-direction: column;
+
+  overflow: auto;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  word-wrap: initial;
+}
+/* login title */
+keeper-record keeper-record-field-address > keeper-div > keeper-div:nth-child(2) > keeper-div:nth-child(1),
+keeper-record keeper-record-field-card > keeper-div > keeper-div:nth-child(2) > keeper-div:nth-child(1),
+keeper-record keeper-record-field-login > keeper-div > keeper-div:nth-child(2) > keeper-div:nth-child(1) {
+  font-size: 14px;
+}
+keeper-record keeper-record-field-password keeper-input {
+  min-height: 24px;
+}
+keeper-record keeper-record-field-password keeper-iconbutton-fill {
+  margin-top: 10px !important;
+  top: 1.5px;
+}
+keeper-record keeper-iconbutton-fill {
+  align-self: center;
+  margin: 0 5px !important;
+}
+keeper-record.minimal {
+  margin-bottom: 12px !important;
+}
+keeper-record.minimal keeper-iconbutton-fill {
+  display: none;
+}
+keeper-record.minimal keeper-show-more {
+  display: none;
+}
+keeper-record.minimal keeper-listitem-new {
+  display: none;
+}
+
+keeper-record-autocomplete {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px !important;
+  width: 100%;
+}
+keeper-record-autocomplete keeper-list {
+  top: 28px;
+}
+
+keeper-record-selector {
+  display: flex;
+  position: relative;
+}
+keeper-record-selector > keeper-div {
+  display: flex;
+  margin-bottom: 3px !important;
+}
+keeper-record-selector keeper-record-simple {
+  display: flex;
+  flex-direction: column;
+}
+keeper-record-selector keeper-record-simple keeper-div:first-child {
+  opacity: 0.8;
+}
+keeper-record-selector keeper-record-simple keeper-div:last-child {
+  font-size: 14px;
+}
+
+keeper-record-chooser {
+  height: 10%;
+  width: 10%;
+  margin-left: -6px !important;
+  margin-top: -5px !important;
+}
+
+keeper-list {
+  background-color: #fff;
+  box-shadow: 0 0 5px #999;
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: 10px;
+}
+/* #keeper-extension keeper-list keeper-list-options{
+  border-bottom: 1px solid #ccc !important;
+  display: block;
+  font-size: 10px;
+  padding: 7px 20px !important;
+}
+#keeper-extension keeper-list keeper-list-options keeper-checkbox,
+#keeper-extension keeper-list keeper-list-options svg {
+  height: 16px !important;
+  width: 16px !important;
+} */
+/* #keeper-extension keeper-list path {
+  fill: #333 !important;
+}
+#keeper-extension keeper-list keeper-div {
+  color: #333 !important;
+} */
+keeper-list keeper-list-container {
+  display: block;
+  max-height: 300px;
+  overflow-y: auto;
+}
+keeper-listitem {
+  border-bottom: 1px solid #ccc !important;
+  cursor: pointer;
+  display: block;
+  padding: 12px 20px !important;
+  position: relative;
+}
+keeper-listitem keeper-div {
+  color: #333 !important;
+  margin-right: 24px !important;
+}
+keeper-listitem keeper-div:nth-child(1) {
+  font-size: 12px;
+  opacity: 0.8;
+}
+keeper-listitem keeper-div:nth-child(2) {
+  font-size: 14px;
+}
+keeper-listitem keeper-div:nth-child(3) {
+  font-size: 10px;
+  margin-top: 2px !important;
+  opacity: 0.8;
+}
+keeper-listitem keeper-div:nth-child(3):empty {
+  margin-top: 0 !important;
+}
+keeper-listitem keeper-iconbutton-person {
+  position: absolute !important;
+  margin-top: -12px !important;
+  top: 50%;
+  right: 10px;
+}
+keeper-listitem keeper-iconbutton-person path {
+  fill: #666 !important;
+}
+
+keeper-listitem keeper-iconbutton-fill {
+  position: absolute !important;
+  margin-top: -12px !important;
+  top: 50%;
+  right: 17px;
+}
+keeper-listitem keeper-iconbutton-fill path {
+  fill: #333 !important;
+}
+keeper-listitem-new {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  padding: 10px 22px 10px 18px !important;
+}
+keeper-listitem-new path {
+  fill: #333 !important;
+}
+keeper-listitem-new keeper-div {
+  color: #333 !important;
+  font-size: 14px;
+  height: 24px;
+  line-height: 24px;
+}
+
+keeper-listitem-new keeper-iconbutton-add {
+  height: 24px;
+  width: 24px;
+}
+keeper-listitem:hover,
+keeper-listitem-new:hover {
+  background-color: #cfc;
+}
+keeper-listitem keeper-div.username-wrap {
+  word-break: break-all;
+}
+
+keeper-record-editor {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 0 20px 0;
+  padding: 0 8px;
+  width: 100%;
+}
+keeper-record-editor keeper-input {
+  overflow-x: hidden;
+  white-space: inherit;
+}
+keeper-record-editor keeper-input-label,
+keeper-record-editor keeper-password-label {
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  justify-content: flex-end;
+  min-height: 45px;
+  margin-bottom: 5px !important;
+}
+keeper-record-editor keeper-input-label > keeper-div,
+keeper-record-editor keeper-password-label > keeper-div {  /* the label */
+  opacity: 0.8;
+}
+keeper-record-editor keeper-input-label keeper-input,
+keeper-record-editor keeper-password-label keeper-input {
+  font-size: 14px;
+  transition: height 0.3s ease;
+  min-height: 25px;
+  max-height: 100px;
+}
+keeper-record-editor keeper-password-label {
+  padding-top: 5px !important;
+  position: relative;
+}
+keeper-record-editor keeper-password-label keeper-password {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: initial;
+}
+keeper-record-editor keeper-password-label keeper-password-options {
+  margin-top: 5px !important;
+}
+keeper-record-editor keeper-password-label keeper-password keeper-iconbutton-dice {
+  top: 24px;
+  /*right: 34px;*/
+  right: -12px;
+}
+keeper-record-editor keeper-input-label:focus,
+keeper-record-editor keeper-password-label:focus,
+keeper-record-editor keeper-password-label keeper-password:focus {
+  outline: none;
+}
+keeper-record-editor keeper-input-label:focus keeper-input,
+keeper-record-editor keeper-input-label keeper-input:focus,
+keeper-record-editor keeper-password-label:focus keeper-input,
+keeper-record-editor keeper-password-label keeper-input:focus {
+  min-height: 25px !important;
+}
+keeper-record-editor keeper-input-label keeper-input:empty {
+  min-height: 3px;
+  height: 3px;
+}
+
+keeper-select {
+  margin: 0 0 10px 0 !important;
+  position: relative;
+  display: block;
+}
+keeper-select keeper-input {
+  background-image: linear-gradient(to bottom, #f3f3f3 0%, #eee 50%, #f3f3f3 100%);
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  cursor: pointer;
+  margin: 0 !important;
+  width: 245px;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+keeper-select keeper-pulldown-toggle {
+  background-image: linear-gradient(to bottom, #f3f3f3 0%, #eee 50%, #f3f3f3 100%);
+  border-bottom-right-radius: 3px;
+  border-color: #ccc;
+  border-style: solid;
+  border-top-right-radius: 3px;
+  border-width: 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 32px;
+  padding: 3px 4px !important;
+  width: 36px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+keeper-select keeper-pulldown-toggle path {
+  fill: #444;
+}
+keeper-select keeper-options {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  max-height: 161px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: 31px;
+  width: 100%;
+}
+keeper-select keeper-option {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #333;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 24px;
+  min-height: 32px;
+  padding: 3px 5px !important;
+}
+keeper-select keeper-option:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-width: 0;
+}
+keeper-select keeper-option:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top: 1px dotted #aaa;
+}
+keeper-select keeper-option:hover {
+  background-color: #ffc600;
+}
+
+keeper-show-more {
+  align-items: center;
+  border-top: 1px solid #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px !important;
+}
+
+keeper-slider {
+  height: 16px;
+  display: block;
+  margin: 4px 0 6px 0 !important;
+  position: relative;
+  width: 100%;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+keeper-slider:after {
+  border-bottom: 1px solid #ccc;
+  content: '';
+  display: block;
+  height: 8px;
+}
+keeper-slider keeper-div {
+  background-color: #ffc600;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 16px;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+
+keeper-icon-offline-bolt{
+  background: url(chrome-extension://__MSG_@@extension_id__/images/baseline-offline_bolt-24px.svg) no-repeat;
+  height: 24px;
+  width: 24px;
+}
+#keeper-extension-popup keeper-iconbutton-more {
+  height: 24px;
+  width: 24px;
+}
+#keeper-extension-popup keeper-iconbutton-more svg {
+  margin: 0;
+  cursor:pointer;
+}
+keeper-iconbutton-more > keeper-div {
+  background-color: #fff;
+  box-shadow: 0 2.5px 5px #777;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  z-index: 1;
+  cursor: pointer;
+}
+keeper-iconbutton-more > keeper-div keeper-div {
+  white-space: nowrap;
+  padding: 8px 12px !important;
+}
+keeper-iconbutton-more > keeper-div keeper-div:hover {
+  background-color: #ccc;
+}
+keeper-iconbutton-more > keeper-div keeper-div:first-child {
+  margin-top: 4px !important;
+}
+keeper-iconbutton-more > keeper-div keeper-div:last-child {
+  margin-bottom: 4px !important;
+}
+keeper-lock {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/ico-field-fill-lock.svg);
+  background-size: 16px 16px !important;
+  cursor: pointer !important;
+  height: 16px !important;
+  position: absolute !important;
+  width: 16px !important;
+  opacity: 0;
+  margin-top: auto !important;
+  padding: 0px 0px 0px 0px;
+  z-index: 2147483647 !important;
+  background-repeat: no-repeat !important;
+}
+keeper-lock.logged-in {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/ico-field-fill-lock.svg)
+}
+keeper-lock.keeper-lock-disabled {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/ico-field-fill-lock-grey.svg)
+}
+keeper-lock.keeper-loading {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/lock-loading.gif);
+  background-size: 22px 16px !important;
+  height: 16px !important;
+  width: 22px !important;
+}
+keeper-lock:hover {
+  opacity: 1 !important;
+}
+
+.keeper-spin3 {
+  animation: keeper-tumble-die .25s linear;
+  animation-iteration-count: 3;
+}
+@keyframes keeper-tumble-die { 100% { transform:rotate(360deg); } }
+
+keeper-phone-select {
+  display: flex;
+  flex-direction: column;
+}
+keeper-phone-select keeper-div {
+  opacity: 0.8;
+}
+keeper-phone-select keeper-input-group {
+  display: flex;
+  justify-content: space-between;
+}
+keeper-phone-select keeper-input:first-child {
+  flex-basis: 25%;
+  min-height: 25px;
+  max-height: 100px;
+}
+keeper-phone-select keeper-input:last-child {
+  flex-basis: 70%;
+  min-height: 25px;
+  max-height: 100px;
+}
+keeper-row {
+  display: flex;
+  flex-direction: row;
+}
+keeper-card-image {
+  position: relative;
+  background-color: #999;
+  border-radius: 2.5px;
+  width: 26px;
+  height: 16px;
+  background-size: 150% 150%;
+  background-position: center center;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  margin-right: 8px !important;
+}
+keeper-card-image.american-express {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/card-icons/light/american-express.png);
+}
+keeper-card-image.diners-club {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/card-icons/light/diners-club.png);
+}
+keeper-card-image.discover {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/card-icons/light/discover.png);
+}
+keeper-card-image.jcb {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/card-icons/light/jcb.png);
+}
+keeper-card-image.maestro {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/card-icons/light/maestro.png);
+}
+keeper-card-image.mastercard {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/card-icons/light/master-card.png);
+}
+keeper-card-image.uatp {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/card-icons/light/uatp.png);
+}
+keeper-card-image.visa-electron {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/card-icons/light/visa-electron.png);
+}
+keeper-card-image.visa {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/card-icons/light/visa.png);
+}
+keeper-card-image.western-union {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/card-icons/light/western-union.png);
+}
+keeper-card-image.world-pay {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/card-icons/light/world-pay.png);
+}
+
+@keyframes hide-lock {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.overlayalert {
+  background-color: rgba(0,0,0,0.9);
+  top: 30%;
+  left: 13%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #ffc600;
+  position: absolute;
+  width: 200px;
+  height: auto;
+}
+.overlayalert .text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.overlayalert.overlayalertfade {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.overlayalert-enforcePasswordComplexity {
+  background-color: rgba(0,0,0,0.9);
+  top: 30%;
+  left: 5%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #ffc600;
+  position: absolute;
+  width: 245px;
+  height: 200px;
+}
+
+.overlayalert-enforcePasswordComplexity .text {
+  margin-top: 5px;
+  padding: 0 10px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  white-space:pre-wrap;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.overlayalert-enforcePasswordComplexity.overlayalertfade {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.overlayalert-enforceMPReentry {
+  background-color: rgba(0,0,0,0.9);
+  top: 22%;
+  left: 4%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #ffc600;
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+.overlayalert-enforceMPReentry.overlayalertfade {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+keeper-gif {
+  height: 44px;
+  width: 230px;
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/Click-lock-Animation-resize.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-self: center;
+  margin-bottom: 27px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+#keeper-hidden-input:focus {
+  outline: none;
+}
+
+#pull-information-button {
+  display: block;
+  margin-bottom: 16px !important;
+}
+
+/* animations */
+.fade-in-keeper-browser-extension {
+  animation-duration: 0.4s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+.fade-out-keeper-browser-extension {
+  animation-duration: 0.4s;
+  animation-name: fadeout;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.smooth-slide-in-from-right-start-keeper {
+  animation-name: smoothSlideInFromRightInit;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.2,0,0.6,1);
+  right:0px;
+}
+
+.smooth-slide-in-from-right-end-keeper {
+  animation-name: smoothSlideInFromRightEnd;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.6,0,0.2,1);
+  right:0px;
+}
+
+@keyframes smoothSlideInFromRightInit {
+  0% {
+    margin-right: -315px;
+   }
+   100% {
+     margin-right: 15px;
+   }
+}
+
+@keyframes smoothSlideInFromRightEnd {
+  0% {
+    margin-right: 15px;
+   }
+   100% {
+     margin-right: 0px;
+   }
+}
+
+.smooth-slide-out-from-right-keeper {
+  animation-name: smoothSlideOutFromRight;
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.8,0,0.2,1);
+  right:0px;
+}
+
+@keyframes smoothSlideOutFromRight {
+  0% {
+    margin-right: 0px;
+   }
+   100% {
+     margin-right: -315px;
+   }
+}
+
+.smooth-slide-in-from-left-start-keeper {
+  animation-name: smoothSlideInFromLeftInit;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.2,0,0.6,1);
+  left:0px;
+}
+
+.smooth-slide-in-from-left-end-keeper {
+  animation-name: smoothSlideInFromLeftEnd(0, 100);
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.6,0,0.2,1);
+  left:0px;
+}
+
+@keyframes smoothSlideInFromLeftInit {
+  0% {
+    margin-left: -315px;
+    left:0px;
+   }
+   100% {
+     margin-left: 15px;
+     left:0px;
+   }
+}
+
+@keyframes smoothSlideInFromLeftEnd(beginning, end) {
+  0% {
+    margin-left: 15px;
+    left:0px;
+   }
+   100% {
+     margin-left: 0px;
+     left:0px;
+   }
+}
+
+.smooth-slide-out-from-left-keeper {
+  animation-name: smoothSlideOutFromLeft;
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.8,0,0.2,1);
+  left:0px;
+}
+
+@keyframes smoothSlideOutFromLeft {
+  0% {
+    margin-left: 0px;
+    left:0px;
+   }
+   100% {
+     margin-left: -315px;
+     left:0px;
+   }
+}

@@ -1,0 +1,52 @@
+/*
+ *
+ */
+#keeper-extension.keeper-theme-blue_and_green {
+  background-image: linear-gradient(-45deg, #009450 0, #0078C0 100%);
+  background-image: -webkit-linear-gradient(-45deg, #009450 0, #0078C0 100%);
+  background-image: -moz-linear-gradient(-45deg, #009450 0, #0078C0 100%); }
+
+#keeper-extension.keeper-theme-red_and_blue {
+  background-image: linear-gradient(-45deg, #FF1744 0, #836DA7 100%);
+  background-image: -webkit-linear-gradient(-45deg, #FF1744 0, #836DA7 100%);
+  background-image: -moz-linear-gradient(-45deg, #FF1744 0, #836DA7 100%); }
+
+#keeper-extension.keeper-theme-burgundy {
+  background-image: linear-gradient(-45deg, #42275A 0, #734B6D 100%);
+  background-image: -webkit-linear-gradient(-45deg, #42275A 0, #734B6D 100%);
+  background-image: -moz-linear-gradient(-45deg, #42275A 0, #734B6D 100%); }
+
+#keeper-extension.keeper-theme-classic {
+  background-image: linear-gradient(-45deg, #1B78E0 0, #004899 100%);
+  background-image: -webkit-linear-gradient(-45deg, #1B78E0 0, #004899 100%);
+  background-image: -moz-linear-gradient(-45deg, #1B78E0 0, #004899 100%); }
+
+#keeper-extension.keeper-theme-flame {
+  background-image: linear-gradient(-45deg, #E96443 0, #904E95 100%);
+  background-image: -webkit-linear-gradient(-45deg, #E96443 0, #904E95 100%);
+  background-image: -moz-linear-gradient(-45deg, #E96443 0, #904E95 100%); }
+
+#keeper-extension.keeper-theme-green {
+  background-image: linear-gradient(-45deg, #2AA541 0, #AA923B 100%);
+  background-image: -webkit-linear-gradient(-45deg, #2AA541 0, #AA923B 100%);
+  background-image: -moz-linear-gradient(-45deg, #2AA541 0, #AA923B 100%); }
+
+#keeper-extension.keeper-theme-deep_ocean {
+  background-image: linear-gradient(-45deg, #14B5C7 0, #433BAA 100%);
+  background-image: -webkit-linear-gradient(-45deg, #14B5C7 0, #433BAA 100%);
+  background-image: -moz-linear-gradient(-45deg, #14B5C7 0, #433BAA 100%); }
+
+#keeper-extension.keeper-theme-glam {
+  background-image: linear-gradient(-45deg, #FAACA8 0, #433BAA 100%);
+  background-image: -webkit-linear-gradient(-45deg, #FAACA8 0, #433BAA 100%);
+  background-image: -moz-linear-gradient(-45deg, #FAACA8 0, #433BAA 100%); }
+
+#keeper-extension.keeper-theme-phoenix {
+  background-image: linear-gradient(-45deg, #FE5200 0, #FF8403 100%);
+  background-image: -webkit-linear-gradient(-45deg, #FE5200 0, #FF8403 100%);
+  background-image: -moz-linear-gradient(-45deg, #FE5200 0, #FF8403 100%); }
+
+#keeper-extension.keeper-theme-aluminum {
+  background-image: linear-gradient(-45deg, #767676 0, #242424 100%);
+  background-image: -webkit-linear-gradient(-45deg, #767676 0, #242424 100%);
+  background-image: -moz-linear-gradient(-45deg, #767676 0, #242424 100%); }

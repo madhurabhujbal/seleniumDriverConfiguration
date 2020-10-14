@@ -1,0 +1,269 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "URLringtone": {
+      "message": "Von URL"
+   },
+   "_10sec": {
+      "message": "10 Sekunden"
+   },
+   "_12hour": {
+      "message": "12 Stunden Anzeige (AM/PM) (Standard ist 24 Stunden Anzeige)"
+   },
+   "_1min": {
+      "message": "1 Minute"
+   },
+   "_1sec": {
+      "message": "1 Sekunde"
+   },
+   "_2sec": {
+      "message": "2 Sekunden"
+   },
+   "_30sec": {
+      "message": "30 Sekunden"
+   },
+   "_5sec": {
+      "message": "5 Sekunden"
+   },
+   "about": {
+      "message": "Über"
+   },
+   "alarm": {
+      "message": "Alarm Uhr"
+   },
+   "alarmandringtone": {
+      "message": "Alarm & Alarmton"
+   },
+   "allpurpose": {
+      "message": "Alarmton für alles"
+   },
+   "am": {
+      "message": "am"
+   },
+   "analog": {
+      "message": "Analog Uhr"
+   },
+   "analogmsg": {
+      "message": "(Ungefähr 4kb pro Sekunde)"
+   },
+   "apply": {
+      "message": "Übernehmen"
+   },
+   "calendar": {
+      "message": "Kalender"
+   },
+   "cancel": {
+      "message": "Abbrechen"
+   },
+   "chat": {
+      "message": "Chat box"
+   },
+   "close": {
+      "message": "Fenster schließen"
+   },
+   "cmtmsg": {
+      "message": "Haben Sie etwas zu kommentieren? Störung zu melden? Bug Report?"
+   },
+   "comment": {
+      "message": "Kommentare"
+   },
+   "countdown": {
+      "message": "Countdown Timer"
+   },
+   "ctxcmt": {
+      "message": "Bug report / Kommentare"
+   },
+   "ctxhide": {
+      "message": ""
+   },
+   "day_0": {
+      "message": "Sonntag"
+   },
+   "day_1": {
+      "message": "Montag"
+   },
+   "day_2": {
+      "message": "Dienstag"
+   },
+   "day_3": {
+      "message": "Mittwoch"
+   },
+   "day_4": {
+      "message": "Donnerstag"
+   },
+   "day_5": {
+      "message": "Freitag"
+   },
+   "day_6": {
+      "message": "Samstag"
+   },
+   "defaultringtone": {
+      "message": "Standard Alarmton"
+   },
+   "digital": {
+      "message": "Digital Uhr"
+   },
+   "digitalmsg": {
+      "message": "(Achtung:  Digital Anzeige verbraucht viel Arbeitsspeicher)"
+   },
+   "display": {
+      "message": "Anzeige"
+   },
+   "enablehourlytimeannounce": {
+      "message": "Stündliche Zeitanzeige (Desktop Pop Up)"
+   },
+   "evening": {
+      "message": "Haben Sie schon Abendessen gegessen?"
+   },
+   "extDes": {
+      "message": "Die erste Erweiterung mit Digital- und Analog- Anzeige, und mit Stündlicher Zeitanzeige (Desktop Pop Up)."
+   },
+   "extName": {
+      "message": "Cool Uhr"
+   },
+   "forum": {
+      "message": "Forum"
+   },
+   "hourlytimeannounce": {
+      "message": "Stündliche Zeitansage"
+   },
+   "max999": {
+      "message": "(maximal: 999)"
+   },
+   "memmsg": {
+      "message": "Animation \"zeichnet\" normalerweise ein neues Bild pro Sekunde, so wird nach einer Weile eine Menge Arbeitsspeicher verbraucht. Ich versuche es so niedrig wie nötig zu reduzieren."
+   },
+   "midnight": {
+      "message": "Wie geht's?"
+   },
+   "month_1": {
+      "message": "Jan"
+   },
+   "month_10": {
+      "message": "Oct"
+   },
+   "month_11": {
+      "message": "Nov"
+   },
+   "month_12": {
+      "message": "Dez"
+   },
+   "month_2": {
+      "message": "Feb"
+   },
+   "month_3": {
+      "message": "Mär"
+   },
+   "month_4": {
+      "message": "Apr"
+   },
+   "month_5": {
+      "message": "Mai"
+   },
+   "month_6": {
+      "message": "Jun"
+   },
+   "month_7": {
+      "message": "Jul"
+   },
+   "month_8": {
+      "message": "Aug"
+   },
+   "month_9": {
+      "message": "Sep"
+   },
+   "morning": {
+      "message": "Guten Morgen!"
+   },
+   "night": {
+      "message": "Zeit zum schlafen"
+   },
+   "none": {
+      "message": "Keiner"
+   },
+   "noon": {
+      "message": "Nett Sie zu sehen, am Nachmittag!"
+   },
+   "noscroll": {
+      "message": "Kein scroll Effekt (Anzeige von 4 Ziffern anstelle vom Automatischen scrollen)"
+   },
+   "notflash": {
+      "message": "(Ich bin keine Flash Uhr!)"
+   },
+   "notitimeannounce": {
+      "message": "Stündliche Zeitansage"
+   },
+   "notitimeis": {
+      "message": "Es ist"
+   },
+   "notsaved": {
+      "message": "Änderungen wurden noch nicht gespeichert! Trotzdem fortfahren?"
+   },
+   "pm": {
+      "message": "pm"
+   },
+   "saved": {
+      "message": "Optionen werden gespeichert."
+   },
+   "seconds": {
+      "message": "Sekunden"
+   },
+   "setalarm": {
+      "message": "Alarm einstellen"
+   },
+   "settings": {
+      "message": "Optionen"
+   },
+   "showbadgeclock": {
+      "message": "Zeitanzeige mit kleinen roten Hintergrund"
+   },
+   "showiconclock": {
+      "message": "Zeitanzeige mit Icon (Das mit Pfeil)"
+   },
+   "shownotificationfor": {
+      "message": "Anzeigedauer der Desktop Zeitanzeige"
+   },
+   "showtodowhenopen": {
+      "message": "Aufgaben-Alarm in einer Desktop-Benachrichtigung anzeigen wenn der Browser geöffnet wird"
+   },
+   "showupdate": {
+      "message": "Updateseite anzeigen wenn Erweiterung aktualisiert wurde"
+   },
+   "stat": {
+      "message": "Statistiken"
+   },
+   "timeis": {
+      "message": "Es ist: "
+   },
+   "timer": {
+      "message": "Stopuhr"
+   },
+   "tools": {
+      "message": "Extras"
+   },
+   "updateiconevery": {
+      "message": "Icon aktualisieren alle: "
+   },
+   "updateiconeverymsg": {
+      "message": ""
+   },
+   "useanalog": {
+      "message": "Gebrauche Analog Uhr"
+   },
+   "usedarkmode": {
+      "message": "Im dark theme Modus anzeigen. (Für jene, die dunkle Browser Themes nutzen, es wird ein halb-transparenter Hintergrund hinter der Zeitanzeige erzeugt, um die Zeitanzeige besser zu sehen.)"
+   },
+   "usedigital": {
+      "message": "Gebrauche Digital uhr"
+   },
+   "version": {
+      "message": "Version"
+   },
+   "viewsavedalarm": {
+      "message": "Gespeicherte Alarme anzeigen"
+   },
+   "whatsnew": {
+      "message": "Was ist neu in dieser Version?"
+   }
+}

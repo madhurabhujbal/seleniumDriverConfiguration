@@ -1,0 +1,67 @@
+/*
+ *
+ */
+#container.blue_and_green,
+#themes .preview .blue_and_green {
+  background-image: linear-gradient(-45deg, #009450 0, #0078C0 100%);
+  background-image: -webkit-linear-gradient(-45deg, #009450 0, #0078C0 100%);
+  background-image: -moz-linear-gradient(-45deg, #009450 0, #0078C0 100%); }
+
+#container.red_and_blue,
+#themes .preview .red_and_blue {
+  background-image: linear-gradient(-45deg, #FF1744 0, #836DA7 100%);
+  background-image: -webkit-linear-gradient(-45deg, #FF1744 0, #836DA7 100%);
+  background-image: -moz-linear-gradient(-45deg, #FF1744 0, #836DA7 100%); }
+
+#container.burgundy,
+#themes .preview .burgundy {
+  background-image: linear-gradient(-45deg, #42275A 0, #734B6D 100%);
+  background-image: -webkit-linear-gradient(-45deg, #42275A 0, #734B6D 100%);
+  background-image: -moz-linear-gradient(-45deg, #42275A 0, #734B6D 100%); }
+
+#container.classic,
+#themes .preview .classic {
+  background-image: linear-gradient(-45deg, #1B78E0 0, #004899 100%);
+  background-image: -webkit-linear-gradient(-45deg, #1B78E0 0, #004899 100%);
+  background-image: -moz-linear-gradient(-45deg, #1B78E0 0, #004899 100%); }
+
+#container.flame,
+#themes .preview .flame {
+  background-image: linear-gradient(-45deg, #E96443 0, #904E95 100%);
+  background-image: -webkit-linear-gradient(-45deg, #E96443 0, #904E95 100%);
+  background-image: -moz-linear-gradient(-45deg, #E96443 0, #904E95 100%); }
+
+#container.green,
+#themes .preview .green {
+  background-image: linear-gradient(-45deg, #2AA541 0, #AA923B 100%);
+  background-image: -webkit-linear-gradient(-45deg, #2AA541 0, #AA923B 100%);
+  background-image: -moz-linear-gradient(-45deg, #2AA541 0, #AA923B 100%); }
+
+#container.deep_ocean,
+#themes .preview .deep_ocean {
+  background-image: linear-gradient(-45deg, #14B5C7 0, #433BAA 100%);
+  background-image: -webkit-linear-gradient(-45deg, #14B5C7 0, #433BAA 100%);
+  background-image: -moz-linear-gradient(-45deg, #14B5C7 0, #433BAA 100%); }
+
+#container.glam,
+#themes .preview .glam {
+  background-image: linear-gradient(-45deg, #FAACA8 0, #433BAA 100%);
+  background-image: -webkit-linear-gradient(-45deg, #FAACA8 0, #433BAA 100%);
+  background-image: -moz-linear-gradient(-45deg, #FAACA8 0, #433BAA 100%); }
+
+#container.phoenix,
+#themes .preview .phoenix {
+  background-image: linear-gradient(-45deg, #FE5200 0, #FF8403 100%);
+  background-image: -webkit-linear-gradient(-45deg, #FE5200 0, #FF8403 100%);
+  background-image: -moz-linear-gradient(-45deg, #FE5200 0, #FF8403 100%); }
+
+#container.aluminum,
+#themes .preview .aluminum {
+  background-image: linear-gradient(-45deg, #767676 0, #242424 100%);
+  background-image: -webkit-linear-gradient(-45deg, #767676 0, #242424 100%);
+  background-image: -moz-linear-gradient(-45deg, #767676 0, #242424 100%); }
+
+#container.glam .record .field.url .value,
+#container.flame .record .field.url .value,
+#container.phoenix .record .field.url .value {
+  color: #00c; }

@@ -1,0 +1,1 @@
+const JsonProto={create:e=>e,encode:e=>({finish:()=>utf8_to_bytes(JSON.stringify(e))}),decode:e=>JSON.parse(bytes_to_utf8(e)),verify:e=>{try{JSON.stringify(e)}catch(e){return e}return null}},NullProto={create:e=>null,encode:e=>({finish:()=>null}),decode:e=>null,verify:e=>null};

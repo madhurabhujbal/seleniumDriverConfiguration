@@ -1,0 +1,36 @@
+{
+   "author": "Derek Leung",
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "images/wait.png",
+      "default_popup": "new_popup2.html",
+      "default_title": "Loading..."
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.facebook.com/ https://www.google.com/ https://apis.google.com/ https://platform.twitter.com/ https://connect.facebook.net/ https://static.ak.fbcdn.net/ https://accounts.google.com/ https://fbstatic-a.akamaihd.net/; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_extDes__",
+   "homepage_url": "https://chrome.google.com/extensions/detail/icegcmhgphfkgglbljbkdegiaaihifce",
+   "icons": {
+      "128": "icons/128x128.png",
+      "16": "icons/16x16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDW761tOLUtdPH409EVOS4FdG4NOnPhTjVAABhUQhpuRfpGx0IGArhk1vSZTDtH5SB8/lxuEYLL83LN7zpJmwnju+ekkiTe/F1Z/Sr4mEjzxhfwgRzK2d/VpsAF5zngIJgQv8N/j6C0rghapMblcUdVpS2Hwpv5NGBBT+/waGQekQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "50",
+   "name": "__MSG_extName__",
+   "offline_enabled": true,
+   "omnibox": {
+      "keyword": "clock"
+   },
+   "optional_permissions": [ "background" ],
+   "options_ui": {
+      "chrome_style": false,
+      "open_in_tab": true,
+      "page": "options_new.html"
+   },
+   "permissions": [ "notifications", "contextMenus", "tts", "*://calendar.google.com/*", "*://www.google.com/calendar/feeds/*", "clipboardWrite", "activeTab", "alarms", "power", "idle" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.3.2"
+}

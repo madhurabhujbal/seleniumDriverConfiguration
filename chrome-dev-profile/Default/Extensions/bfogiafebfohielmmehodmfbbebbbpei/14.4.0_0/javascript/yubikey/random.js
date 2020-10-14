@@ -1,0 +1,1 @@
+var random={random_256_bit_key:function(){return randomFun(256)}};randomFun=function(n){var e=new Uint8Array(n/8);if("undefined"!=typeof crypto&&crypto.getRandomValues)crypto.getRandomValues(e);else{if("undefined"==typeof msCrypto||!msCrypto.getRandomValues)throw"Secure random number generation not found.";msCrypto.getRandomValues(e)}return e};

@@ -1,0 +1,50 @@
+.md-toggle label {
+  position: relative;
+  display: block;
+  height: 12px;
+  width: 28px;
+  background: #999;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.md-toggle label:after {
+  position: absolute;
+  left: -2px;
+  top: -3px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+  background: #ccc;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  content: '';
+  transition: all 0.3s ease;
+}
+
+.md-toggle label:active:after {
+  transform: scale(1.15, 0.85);
+}
+
+.md-toggle input:checked ~ label {
+  background: #999;
+}
+
+.md-toggle input:checked ~ label:after {
+  left: 12px;
+  background: #ffc600;
+}
+
+.md-toggle input:disabled ~ label {
+  background: #898989;
+  pointer-events: none;
+}
+
+.md-toggle input:disabled ~ label:after {
+  background: #bcbdbc;
+}
+
+.md-toggle input {
+  display: none;
+}

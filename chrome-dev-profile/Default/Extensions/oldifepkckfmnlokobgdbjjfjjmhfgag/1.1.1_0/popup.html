@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="http://allfont.ru/allfont.css?fonts=furore" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="skin/popup.css">
+</head>
+<body class="nohtml" tabindex="1" style="width: 270px; height: 285px;">
+  <div class="w-100">
+    <header style="margin-left: 36px; margin-top: 8px; margin-bottom: 6px;" style="float: left;">
+      <img id="logo" src="icons/popup-logo.png">
+    </header>
+
+    <div class="w-100" style="height: 111px; padding-left: 25px; padding-right: 30px; padding-top: 30px; padding-bottom: 30px; box-shadow: inset 0 10px 0px -9px #00000011;">
+      <h1 style="font-family: 'cairo-bold'; font-size: 16px; color: #e83737; line-height: 104%;">For this website</h1>
+      <h1 id="sitename" style="font-family: 'cairo-semibold'; font-size: 16px; display: inline;">goblins-online.com</h1>
+      <div class="custom-control custom-switch custom-switch-md checkbox" style="position: absolute; left: 200px; top: 84px;">
+        <input id="adblock-switch" type="checkbox" class="custom-control-input adblock-status" checked>
+        <label class="custom-control-label" for="adblock-switch" style="padding-left: 0px;"></label>
+      </div>
+    </div>
+    <div id="base-block" style="padding-left: 25px; padding-top: 30px; padding-bottom: 24px; box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.1); background: #fff; height: 131px;">
+      <div id="stats-container">
+        <h1 style="font-family: 'cairo-bold'; font-size: 16px; line-height: 104%; color: white;">Blocked ads:</h1>
+        <div style="position: absolute; width: 270px; height: 0px; left: 25px; top: 232px; border: 0px solid #FFFFFF;"></div>
+        <div style="margin-top: 18px;">
+          <h1 id="stats-page" style="display: inline; font-size: 18px; color: red;">0</h1><h1 style="font-family: cairo-semibold; font-size: 16px; display: inline; color: white;">   - on this page</h1>
+          <br>
+          <h1 id="stats-total" style="display: inline; font-size: 18px; color: red;">5702</h1><h1 style="font-family: cairo-semibold; font-size: 16px; display: inline; color: white;">   - in total</h1>
+        </div>
+      </div>
+      <div>
+        <button id="refresh" style="color: #e74137; font-size: 18px; font-family: 'cairo-semibold'; width: 173px; position: absolute; top: 207px; left: 48px; height: 44px; background: #FFFFFF; border: none; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); border-radius: 100px;"><i style="font-size: 16px; color: #e74137;" class="fa fa-refresh" aria-hidden="true"></i>  Refresh</button>
+      </div>
+    </div>
+
+    <!-- <div id="content" class="w-100 text-center">
+      <p id="enabled-yes" class="i18n_enabled_for_site" style="font-size: 18px;"></p>
+      <p id="enabled-no" class="i18n_disabled_for_site" style="font-size: 18px;"></p>
+      <div style="height: 70px;">
+        <div class="checkbox" class="w-100 mb-2">
+          <input id="adblock-switch" type="checkbox" class="checkbox-input adblock-status" style="cursor: pointer;" />
+          <label class="checkbox-label-status" for="checkbox-input"></label>
+        </div>
+      </div>
+
+      <div id="refresh" class="mt-4" style="cursor: pointer;">
+        <p style="font-family: 'Open Sans', sans-serif; color: white; text-decoration: underline; font-size:16px;"><i class="fa fa-refresh" style="font-size:16px"></i> Refresh</p>
+      </div>
+
+      <div id="stats-container" class="mt-4" style="margin-bottom: 40px; color: white; height: 76px;">
+        <p class="i18n_stats_title" style="display: inline; font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 16px;"></p>
+        <p id="stats-page" style="font-family: 'Open Sans', sans-serif; font-size: 14px;"></p>
+        <p id="stats-total" style="font-family: 'Open Sans', sans-serif; font-size: 14px;"></p>
+      </div>
+    </div> -->
+    
+    <!-- <div id="wrapper">
+      <ul id="menu">
+        <li id="enabled" class="menu-item" role="button">
+          <span id="enabled-yes" class="i18n_enabled_for_site"></span>
+          <span id="enabled-no" class="i18n_disabled_for_site"></span>
+          <div class="icon"></div>
+        </li>
+    
+        <li id="refresh" class="menu-item" role="button">
+        <img src="skin/icons/refresh.png" height=50 />
+      </li>
+    
+        <li id="stats-container">
+          <p><h2 class="i18n_stats_title" style="display: inline;"></h2><h2 style="display: inline;">:</h2></p>
+          <ul>
+            <li id="stats-page"></li>
+            <li id="stats-total"></li>
+          </ul>
+        </li>
+      </ul>
+    </div> -->
+
+  </div>
+  <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="polyfill.js"></script>
+  <script src="ext/common.js"></script>
+  <!-- <script src="i18n.js"></script> -->
+  <script src="popup.js"></script>
+</body>
+</html>

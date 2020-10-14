@@ -1,0 +1,269 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "URLringtone": {
+      "message": "à partir du lien"
+   },
+   "_10sec": {
+      "message": "10 secondes"
+   },
+   "_12hour": {
+      "message": "Utiliser le système 12 heures (valeur par défaut du système utilise 24 heures)"
+   },
+   "_1min": {
+      "message": "1 minute"
+   },
+   "_1sec": {
+      "message": "1 seconde"
+   },
+   "_2sec": {
+      "message": "2 seconds"
+   },
+   "_30sec": {
+      "message": "30 secondes"
+   },
+   "_5sec": {
+      "message": "5 secondes"
+   },
+   "about": {
+      "message": "À propos de"
+   },
+   "alarm": {
+      "message": ""
+   },
+   "alarmandringtone": {
+      "message": "Alarme & Sonnerie"
+   },
+   "allpurpose": {
+      "message": "Sonnerie"
+   },
+   "am": {
+      "message": "am"
+   },
+   "analog": {
+      "message": "L'horloge classique"
+   },
+   "analogmsg": {
+      "message": "(Environ 4K par seconde)"
+   },
+   "apply": {
+      "message": "Appliquer"
+   },
+   "calendar": {
+      "message": ""
+   },
+   "cancel": {
+      "message": "Annuler"
+   },
+   "chat": {
+      "message": "Chat box"
+   },
+   "close": {
+      "message": "Fermer"
+   },
+   "cmtmsg": {
+      "message": "Vous avez un commentaire? Signaler un bug?"
+   },
+   "comment": {
+      "message": "Commentaire"
+   },
+   "countdown": {
+      "message": ""
+   },
+   "ctxcmt": {
+      "message": ""
+   },
+   "ctxhide": {
+      "message": ""
+   },
+   "day_0": {
+      "message": "Dimanche"
+   },
+   "day_1": {
+      "message": "Lundi"
+   },
+   "day_2": {
+      "message": "Mardi"
+   },
+   "day_3": {
+      "message": "Mercredi"
+   },
+   "day_4": {
+      "message": "Jeudi"
+   },
+   "day_5": {
+      "message": "Vendredi"
+   },
+   "day_6": {
+      "message": "Samedi"
+   },
+   "defaultringtone": {
+      "message": "Sonnerie par défaut"
+   },
+   "digital": {
+      "message": "L'horloge digitale"
+   },
+   "digitalmsg": {
+      "message": "(Attention:  Utiliser l'horloge numérique consommera beaucoup plus la mémoire de votre ordinateur.)"
+   },
+   "display": {
+      "message": "Affichage"
+   },
+   "enablehourlytimeannounce": {
+      "message": "Activer la notification des heures"
+   },
+   "evening": {
+      "message": "Avez-vous déjà diné?"
+   },
+   "extDes": {
+      "message": "An extension fully loaded with tons of useful time-related features... But the best part is, it is totally COOL."
+   },
+   "extName": {
+      "message": "Cool Horloge por Google Chrome™"
+   },
+   "forum": {
+      "message": ""
+   },
+   "hourlytimeannounce": {
+      "message": "Annonce des heures"
+   },
+   "max999": {
+      "message": "(Máximo: 999)"
+   },
+   "memmsg": {
+      "message": "L'animation \"dessine\" habituellement une nouvelle image chaque seconde, donc normalement il va prendre beaucoup plus de mémoire après une période de temps cependant je vais essayer de le réduire au plus bas."
+   },
+   "midnight": {
+      "message": "Quoi de neuf?"
+   },
+   "month_1": {
+      "message": "Jan"
+   },
+   "month_10": {
+      "message": "Oct"
+   },
+   "month_11": {
+      "message": "Nov"
+   },
+   "month_12": {
+      "message": "Déc"
+   },
+   "month_2": {
+      "message": "Fév"
+   },
+   "month_3": {
+      "message": "Mar"
+   },
+   "month_4": {
+      "message": "Avr"
+   },
+   "month_5": {
+      "message": "Mai"
+   },
+   "month_6": {
+      "message": "Jui"
+   },
+   "month_7": {
+      "message": "Jul"
+   },
+   "month_8": {
+      "message": "Aou"
+   },
+   "month_9": {
+      "message": "Sep"
+   },
+   "morning": {
+      "message": "Bonjour!"
+   },
+   "night": {
+      "message": "Il est temps de se coucher."
+   },
+   "none": {
+      "message": "Non"
+   },
+   "noon": {
+      "message": "Quel plaisir de vous voir cet l'après-midi!"
+   },
+   "noscroll": {
+      "message": "N'utilisez pas d'effet de défilement (affichage de 4 chiffres au lieu du défilement)"
+   },
+   "notflash": {
+      "message": "(Je ne suis pas une horloge Flash!)"
+   },
+   "notitimeannounce": {
+      "message": "Annonce des heures"
+   },
+   "notitimeis": {
+      "message": "Il est maintenant"
+   },
+   "notsaved": {
+      "message": ""
+   },
+   "pm": {
+      "message": "pm"
+   },
+   "saved": {
+      "message": "Les options sont enregistrées."
+   },
+   "seconds": {
+      "message": "secondes"
+   },
+   "setalarm": {
+      "message": ""
+   },
+   "settings": {
+      "message": "Options"
+   },
+   "showbadgeclock": {
+      "message": "Affichage de l'heure sur le badge"
+   },
+   "showiconclock": {
+      "message": "Affichage de l'horloge sur l'icône (celle avec une flèche)"
+   },
+   "shownotificationfor": {
+      "message": "Temps pour l'affichage de l'annonce: "
+   },
+   "showtodowhenopen": {
+      "message": "Des alertes de tâches dans votre notification bureau quand vous lancez votre fureteur"
+   },
+   "showupdate": {
+      "message": "Afficher la mise jour"
+   },
+   "stat": {
+      "message": ""
+   },
+   "timeis": {
+      "message": "Il est maintenant: "
+   },
+   "timer": {
+      "message": ""
+   },
+   "tools": {
+      "message": ""
+   },
+   "updateiconevery": {
+      "message": "Rafraîchir le recouvrement d l'icône: "
+   },
+   "updateiconeverymsg": {
+      "message": "(plus cette extension est longue,plus elle est légère.)"
+   },
+   "useanalog": {
+      "message": "Utiliser l'horloge classique"
+   },
+   "usedarkmode": {
+      "message": "Utilisez le mode Dark thème (Pour ceux qui utilisent un thème sombre,  ajoutera une bulle semi-transparente sous les numéros de sorte que vous pourrez voir l'heure.)"
+   },
+   "usedigital": {
+      "message": "Utiliser l'horloge digitale"
+   },
+   "version": {
+      "message": "Version"
+   },
+   "viewsavedalarm": {
+      "message": "Afficher les alarmes sauvées"
+   },
+   "whatsnew": {
+      "message": "Voir ce qu'il y a de nouveau dans cette version"
+   }
+}

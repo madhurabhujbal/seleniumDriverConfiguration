@@ -1,0 +1,1 @@
+changeCfgHost("keepersecurity.com","keepersecurity.eu"),isDebugMode=!1,isDebugMode||disableDebugMode();

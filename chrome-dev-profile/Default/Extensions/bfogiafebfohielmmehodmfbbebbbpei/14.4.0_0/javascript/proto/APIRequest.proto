@@ -1,0 +1,466 @@
+syntax = "proto3";
+
+package Authentication;
+option java_package = "com.keepersecurity.proto";
+option java_outer_classname = "Authentication";
+
+enum SupportedLanguage {
+  ENGLISH = 0;
+  ARABIC = 1; 
+  BRITISH = 2;
+  CHINESE = 3;
+  CHINESE_HONG_KONG = 4;
+  CHINESE_TAIWAN = 5;
+  DUTCH = 6;
+  FRENCH = 7;
+  GERMAN = 8;
+  GREEK = 9;
+  HEBREW = 10;
+  ITALIAN = 11;
+  JAPANESE = 12;
+  KOREAN = 13;
+  POLISH = 14;
+  PORTUGUESE = 15;
+  PORTUGUESE_BRAZIL = 16;
+  ROMANIAN = 17;
+  RUSSIAN = 18;
+  SLOVAK = 19;
+  SPANISH = 20;
+}
+
+enum LoginType {
+  NORMAL = 0;
+  SSO = 1;
+  BIO = 2;
+  ALTERNATE = 3;
+  OFFLINE = 4;
+}
+
+enum DeviceStatus {
+  NEED_APPROVAL = 0;
+  OK = 1;
+  DEVICE_DISABLED = 2;
+}
+
+enum LicenseStatus {
+  OTHER = 0; // trial for bw
+  ACTIVE = 1;
+  EXPIRED = 2;
+  DISABLED = 3;
+}
+
+enum AccountType {
+  CONSUMER = 0;
+  FAMILY = 1;
+  ENTERPRISE = 2;
+}
+
+enum SessionTokenType {
+  NO_RESTRICTION = 0; // can do everything
+  ACCOUNT_RECOVERY = 1; // can only change password
+  SHARE_ACCOUNT = 2; // must first agree to share their account
+  PURCHASE = 3; // can only get sku's for purchase
+  RESTRICT = 4; // This is for a session token where the account is expired, but can still log in
+  ACCEPT_INVITE = 5; // can only accept the enterprise invite
+}
+
+enum Version {
+    invalid_version = 0; //protobuf enum has to start with 0.
+    default_version = 1;
+    second_version = 2;
+}
+
+enum MasterPasswordReentryActionType {
+  UNMASK = 0;
+  COPY = 1;
+}
+
+message ApiRequest {
+  bytes encryptedTransmissionKey = 1;
+  int32 publicKeyId = 2;
+  string locale = 3;
+  bytes encryptedPayload = 4;
+  int32 encryptionType = 5;
+  string recaptcha = 6;
+}
+
+message ApiRequestPayload {
+  bytes payload = 1;
+  bytes encryptedSessionToken = 2;
+  bytes timeToken = 3;
+  int32 apiVersion = 4;
+}
+
+message Transform {
+  bytes key = 1;
+  bytes encryptedDeviceToken = 2;
+}
+
+message DeviceRequest {
+  string clientVersion = 1; 
+  string deviceName = 2;
+}
+
+message AuthRequest {
+  string clientVersion = 1; 
+  string username = 2; 
+  bytes encryptedDeviceToken = 3; 
+}
+
+message NewUserMinimumParams {
+  int32 minimumIterations = 1;
+  repeated string passwordMatchRegex = 2;
+  repeated string passwordMatchDescription = 3;
+}
+
+message SsoRequestParams {
+  string action = 1;
+  string dest = 2;
+  bool embedded = 3;
+  bool json = 4;
+  string key = 5;
+}
+
+message PreLoginRequest {
+  AuthRequest authRequest = 1;   
+  LoginType loginType = 2; 
+  bytes twoFactorToken = 3; // optional - if supplied, it will be validated if it needs refreshing
+  SsoRequestParams ssoRequestParams = 4;
+}
+
+message LoginRequest {
+  AuthRequest authRequest = 1;
+  LoginType loginType = 2; 
+  bytes authenticationHashPrime = 3; 
+  bytes randomHashKey = 4; 
+  bytes encryptedTwoFactorToken = 5;
+  bytes encryptedBreachWatchToken = 6;
+}
+
+message RegistrationRequest {
+  AuthRequest authRequest = 1;
+  UserAuthRequest userAuthRequest = 2;
+  bytes encryptedClientKey = 3; // encrypted with the data key
+  bytes encryptedPrivateKey = 4; // encrypted with the data key
+  bytes publicKey = 5;
+  string verificationCode = 6;
+
+  bytes deprecatedAuthHashHash = 7; // these will be ignored once the v2 clients are obsolete
+  bytes deprecatedEncryptedClientKey = 8;
+  bytes deprecatedEncryptedPrivateKey = 9;
+  bytes deprecatedEncryptionParams = 10; 
+}
+
+message DeviceResponse {
+  bytes encryptedDeviceToken = 1;
+  DeviceStatus status = 2;
+}
+
+message Salt {
+  int32 iterations = 1;
+  bytes salt = 2;
+  int32 algorithm = 3;
+  bytes uid = 4;
+  string name=5;
+}
+
+message TwoFactorChannel {
+  int32 type = 1;
+}
+
+message SsoUserInfo {
+  string companyName = 1;
+  string samlRequest = 2;
+  string samlRequestType = 3;
+  string ssoDomainName = 4;
+  string url = 5;
+}
+
+message PreLoginResponse {
+  DeviceStatus deviceStatus = 1;
+  repeated Salt salt = 2;
+  repeated TwoFactorChannel OBSOLETE_FIELD = 3; //DO NOT RE-USE. placeholder for backwards compatability
+  SsoUserInfo ssoUserInfo = 4;
+}
+
+message LoginResponse {
+  bytes encryrptedSessionToken = 1;
+  License vault = 2;
+  License chat = 3;
+  License storage = 4;
+  License breachWatch = 5;
+  AccountType accountType = 6;
+  bytes encryptedDAT = 7;
+  bytes encryptedPAT = 8;
+  bytes encryptedEAT = 9;
+  bytes encryptedDataKey = 10;
+  repeated SessionTokenType sessionTokenType = 11;
+}
+
+message License {
+   int64 created = 1;
+   int64 expiration = 2;    
+   LicenseStatus licenseStatus = 3;
+   bool paid = 4;
+   string message = 5;
+}
+
+message OwnerlessRecord {
+  bytes recordUid = 1; // used in get request, set request, set response
+  bytes recordKey = 2; // used in set request
+  int32 status = 3; // used in set response
+}
+
+message OwnerlessRecords {
+  repeated OwnerlessRecord ownerlessRecord = 1;
+}
+
+message UserAuthRequest {
+  bytes uid = 1;
+  bytes salt = 2;
+  int32 iterations = 3;
+  bytes encryptedClientKey = 4;
+  bytes authHash = 5;
+  bytes encryptedDataKey = 6;
+  LoginType loginType = 7;
+  string name = 8;
+  int32 algorithm = 9;
+}
+
+message UidRequest {
+  repeated bytes uid = 1;
+}
+
+message DeviceClientVersionUpdateRequest {
+  bytes encryptedDeviceToken = 1;
+  string clientVersion = 2;
+}
+
+
+message ConvertUserToV3Request {
+   AuthRequest authRequest = 1;
+   UserAuthRequest userAuthRequest = 2; 
+   bytes encryptedClientKey = 3; // gcm encrypted with the data key
+   bytes encryptedPrivateKey = 4; // gcm encrypted with the data key
+   bytes publicKey = 5;
+   // TODO add alternate passwords
+}
+
+message RevisionResponse {
+  int64 revision = 1;
+}
+
+message ChangeEmailRequest {
+    string newEmail = 1;
+}
+
+message ChangeEmailResponse {
+    bytes encryptedChangeEmailToken = 1;
+}
+
+message EmailVerificationLinkResponse {
+    bool emailVerified = 1;
+}
+
+message SecurityData {  // used in SecurityDataReqeust
+    bytes uid = 1;
+    bytes data = 2;
+}
+
+message SecurityDataRequest {  // to update a records security data
+    repeated SecurityData recordSecurityData = 1;
+    repeated SecurityData masterPasswordSecurityData = 2;
+}
+
+// if mp or not, by user, include reused passwords
+message SecurityReportIncrementalData { // used in SecurityReportResponse
+        int64 enterpriseUserId = 1;
+        bytes currentSecurityData = 2;
+        int64 currentSecurityDataRevision = 3;
+        bytes oldSecurityData = 4;
+        int64 oldSecurityDataRevision = 5;
+}
+
+message SecurityReport { // used for both get and save
+	int64 enterpriseUserId = 1;
+	bytes encryptedReportData = 2;	
+  int64 revision = 3; // for save this was returned in get, for get this is the saved revision
+	string twoFactor = 4; // for get not save
+	int64 lastLogin = 5; // for get not save
+  int32 numberOfReusedPassword=6;
+  repeated SecurityReportIncrementalData securityReportIncrementalData = 7; 
+}
+
+message SecurityReportSaveRequest {
+  repeated SecurityReport securityReport = 1;
+}
+
+message SecurityReportRequest {
+  int64 fromPage = 1;
+}
+
+message SecurityReportResponse {
+	bytes enterprisePrivateKey = 1;
+	repeated SecurityReport securityReport = 2;
+  int64 asOfRevision = 3; // the revision the data was retrieved for
+  int64 fromPage = 4;
+  int64 toPage = 5;
+  bool complete = 6;
+}
+
+message ReusedPasswordsRequest {
+  int32 count = 1;
+}
+
+message SummaryConsoleReport {
+	int32 reportType = 1;
+	bytes reportData = 2;
+}
+
+enum ObjectTypes {
+	RECORD = 0;
+	SHARED_FOLDER_USER = 1;
+	SHARED_FOLDER_TEAM = 2;
+	USER_FOLDER = 3;
+	TEAM_USER = 4;
+}
+
+message ChangeToKeyTypeOne {
+	ObjectTypes objectType = 1;
+	bytes primaryUid = 2;
+	bytes secondaryUid = 3;
+	bytes key = 4;
+}
+
+message ChangeToKeyTypeOneRequest {
+	repeated ChangeToKeyTypeOne changeToKeyTypeOne = 1;
+}
+
+message ChangeToKeyTypeOneStatus {
+  bytes  uid = 1;
+  string type = 2;
+  string status = 3;
+  string reason = 4;
+}
+
+message ChangeToKeyTypeOneResponse {
+  repeated ChangeToKeyTypeOneStatus changeToKeyTypeOneStatus = 1;
+}
+
+enum ProcessTokenType {
+     CHANGE_EMAIL = 0;
+     EMAIL_VERIFICATION = 1;
+     IP_ADDRESS_VERIFICATION = 2;
+}
+
+message ProcessToken {
+	ProcessTokenType processTokenType = 1;
+	bytes payload = 2;
+}
+
+message SetKey { // for setting keys where the id is a long value
+  int64 id = 1; // role_id
+  bytes key = 2; // role key GCM encrypted with the tree key
+}
+
+message SetKeyRequest {
+  repeated SetKey keys = 1;
+}
+
+message AuthenticateViaEmail {
+  string email = 1;
+  bool resend = 2;
+  string locale = 3;
+}
+
+message RegisterUserRequest { //same input as the register command
+  string email = 1;
+  Version version = 2;  //new Field("version", new IntegerFieldValidator(1, 2, 1), false);
+  bytes authVerifier = 3;  //new Field("auth_verifier", new AuthVerifierFieldValidator(), true); size=(70, 70)?
+  bytes encryptionParams = 4;  //new Field("encryption_params", new EncryptionParamsFieldValidator(), true); size=(134, 134)?
+  bytes publicKey = 5;  //new Field("public_key", new PublicKeyFieldValidator(), true); size=(10, 2000)?
+  bytes encryptedPrivateKey = 6;  //new Field("encrypted_private_key", new DataKeyEncPrivateKeyFieldValidator(), true); size=(10, 2000)?
+  string installReferrer = 7;  //new Field("install_referrer", new StringFieldValidator(0, 1024), false); size=(0, 1024)?
+  bytes clientKey = 8;  //new Field("client_key", new DataKeyEncDataKeyFieldValidator(), false); size=(86, 86)?
+  string deviceUid = 9;  //input.optString("uid") in registerDevice(); callpod.activation.uid varchar(127) empty string allowed
+  int32 mccMNC = 10;  //input.optString("mcc_mnc") in verifyDevice(); carrier_sim_codes.mcc_mnc int(6)
+  string mfg = 11;  //input.optString("mfg") in verifyDevice(); appstore_device_history.mfg char(64)
+  string model = 12;  //input.optString("model") in verifyDevice(); appstore_device_history.model char(64)
+  string brand = 13;  //input.optString("brand") in verifyDevice(); appstore_device_history.brand char(64)
+  string product = 14;  //input.optString("product") in verifyDevice(); appstore_device_history.product char(64)
+  string pushToken = 15;  //input.optString("pt"); push_token.token varchar(1536)?
+  string device = 16;  //input.optString("device"); used in PromotionMatcher; appstore_device_history.device char(64)?
+  string carrier = 17;  //input.optString("carrier"); used in PromotionMatcher; appstore_device_history.carrier char(64)?
+  bool skipGroupAccept = 18;  //input.optBoolean("skip_group_accept", false)
+  string locale = 19;
+  string clientVersion = 20;
+  string ipAddress = 21;
+  bool fromSP = 22;  //from SSO service provider
+  string verificationCode = 23;
+  bytes encryptedDeviceToken = 24;
+}
+
+message RegisterUserResponse {
+  int32 emailId = 1;
+  int32 userId = 2;
+  bytes userUid = 3;
+}
+
+message DeviceVerification {
+  string email = 1;
+  string twoFactorChannel = 2; // TwoFactorChannel, only "sms", "duo", "on_device" or "on_approved_device"; default to email verification 
+  string clientVersion = 3;
+  string locale = 4;
+  bytes encryptedDeviceToken = 5;
+}
+
+message DeviceApprovalRequest {
+  string email = 1;
+  string twoFactorChannel = 2; // TwoFactorChannel, only "sms", "duo", "on_device" or "on_approved_device"; default to email verification 
+  string clientVersion = 3;
+  string locale = 4;
+  bytes encryptedDeviceToken = 5;
+  string totpCode = 6; 
+  string deviceIp = 7; //This is the ip address of the original device that needs to be approved, which will be included in the TwoFactorToken.
+  string deviceTokenExpireDays = 8; //equivalent to the device_token_expire_days that is used in the Login command
+}
+
+message DeviceApprovalResponse {
+  bytes encryptedTwoFactorToken = 1;
+}
+
+message NodeEnforcementAddOrUpdateRequest {
+  int64 nodeId = 1;
+  string enforcement = 2;
+  string value = 3;
+}
+
+message NodeEnforcementRemoveRequest {
+  int64 nodeId = 1;
+  string enforcement = 2;
+}
+
+message UserNames {
+  repeated string username = 1;
+}
+
+message ApiRequestByKey {
+  int32 keyId = 1;
+  bytes payload = 2;
+  string username = 3;
+  string locale = 4;
+  SupportedLanguage supportedLanguage = 5;
+}
+
+message MemcacheRequest {
+  string key = 1; 
+}
+
+message MemcacheResponse {
+  string key = 1;
+  string value = 2; 
+}
+
+message MasterPasswordReentryRequest {
+  string pbkdf2Password = 1;  
+}

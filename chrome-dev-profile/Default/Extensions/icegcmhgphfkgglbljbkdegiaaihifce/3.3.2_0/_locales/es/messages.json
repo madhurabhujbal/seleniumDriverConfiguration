@@ -1,0 +1,272 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "URLringtone": {
+      "message": "Desde URL"
+   },
+   "_10sec": {
+      "message": "10 segundos"
+   },
+   "_12hour": {
+      "message": "Usar sistema de 12 horas (Por defecto se usa el sistema de 24 horas)"
+   },
+   "_1min": {
+      "message": "1 minuto"
+   },
+   "_1sec": {
+      "message": "1 segundo"
+   },
+   "_2sec": {
+      "message": "2 segundos"
+   },
+   "_30sec": {
+      "message": "30 segundos"
+   },
+   "_5sec": {
+      "message": "5 segundos"
+   },
+   "about": {
+      "message": "Sobre"
+   },
+   "alarm": {
+      "message": "Alarma"
+   },
+   "alarmandringtone": {
+      "message": "Alarmas y Tonos"
+   },
+   "allpurpose": {
+      "message": "Tono para todo"
+   },
+   "am": {
+      "message": "am"
+   },
+   "analog": {
+      "message": "Reloj Analógico"
+   },
+   "analogmsg": {
+      "message": "(Alrededor de 4KB por segundo)"
+   },
+   "apply": {
+      "message": "Aplicar"
+   },
+   "calendar": {
+      "message": "Calendario"
+   },
+   "cancel": {
+      "message": "Cancelar"
+   },
+   "chat": {
+      "message": "Chat"
+   },
+   "close": {
+      "message": "Cerrar"
+   },
+   "cmtmsg": {
+      "message": "Envía sugerencias, comentarios o errores aquí"
+   },
+   "comment": {
+      "message": "Comentarios"
+   },
+   "countdown": {
+      "message": "Cuenta atrás"
+   },
+   "ctxcmt": {
+      "message": "Informar de un error / Comentario"
+   },
+   "ctxhide": {
+      "message": "No mostrar esto"
+   },
+   "day_0": {
+      "message": "Domingo"
+   },
+   "day_1": {
+      "message": "Lunes"
+   },
+   "day_2": {
+      "message": "Martes"
+   },
+   "day_3": {
+      "message": "Miércoles"
+   },
+   "day_4": {
+      "message": "Jueves"
+   },
+   "day_5": {
+      "message": "Viernes"
+   },
+   "day_6": {
+      "message": "Sábado"
+   },
+   "defaultringtone": {
+      "message": "Tono por omisión"
+   },
+   "digital": {
+      "message": "Reloj Digital"
+   },
+   "digitalmsg": {
+      "message": "(Reloj digital utilizará una cierta cantidad de memoria.)"
+   },
+   "display": {
+      "message": "Mostrar"
+   },
+   "enablehourlytimeannounce": {
+      "message": "Activar el Aviso a las en punto (Notificación en el escritorio)"
+   },
+   "evening": {
+      "message": "¿Ya has cenado?"
+   },
+   "extDes": {
+      "message": "Una extensión cargada de utilidades para mejorar tu reloj. Lo mejor de ella es que es realmente GUAY."
+   },
+   "extName": {
+      "message": "Reloj Guay"
+   },
+   "forum": {
+      "message": "Foro"
+   },
+   "help": {
+      "message": "Ayuda"
+   },
+   "hourlytimeannounce": {
+      "message": "Aviso a las en punto"
+   },
+   "max999": {
+      "message": "(Máximo:  999)"
+   },
+   "memmsg": {
+      "message": "La animación usualmente \"dibuja\" una nueva imagen por segundo, así que normalmente usa mucha memoria después de un tiempo. Estoy trabajando para reducirlo a lo mínimo."
+   },
+   "midnight": {
+      "message": "¿Qué pasa?"
+   },
+   "month_1": {
+      "message": "Ene"
+   },
+   "month_10": {
+      "message": "Oct"
+   },
+   "month_11": {
+      "message": "Nov"
+   },
+   "month_12": {
+      "message": "Dic"
+   },
+   "month_2": {
+      "message": "Feb"
+   },
+   "month_3": {
+      "message": "Mar"
+   },
+   "month_4": {
+      "message": "Abr"
+   },
+   "month_5": {
+      "message": "May"
+   },
+   "month_6": {
+      "message": "Jun"
+   },
+   "month_7": {
+      "message": "Jul"
+   },
+   "month_8": {
+      "message": "Ago"
+   },
+   "month_9": {
+      "message": "Sep"
+   },
+   "morning": {
+      "message": "¡Buenos días!"
+   },
+   "night": {
+      "message": "Es hora de dormir."
+   },
+   "none": {
+      "message": "Ninguno"
+   },
+   "noon": {
+      "message": "¡Buenas tardes!"
+   },
+   "noscroll": {
+      "message": "No usar el efecto de rotación (Mostrar 4 números en vez de rotar)"
+   },
+   "notflash": {
+      "message": "(No soy un reloj Flash!)"
+   },
+   "notitimeannounce": {
+      "message": "Notificación en el Escritorio"
+   },
+   "notitimeis": {
+      "message": "Ahora son las"
+   },
+   "notsaved": {
+      "message": "¡Las opciones modificadas no se han guardado! ¿Desea continuar?"
+   },
+   "pm": {
+      "message": "pm"
+   },
+   "saved": {
+      "message": "Guardado."
+   },
+   "seconds": {
+      "message": "segundos."
+   },
+   "setalarm": {
+      "message": "Poner alarma"
+   },
+   "settings": {
+      "message": "Opciones"
+   },
+   "showbadgeclock": {
+      "message": "Mostrar hora en un marco."
+   },
+   "showiconclock": {
+      "message": "Mostrar reloj del icono (El que tiene las flechas)"
+   },
+   "shownotificationfor": {
+      "message": "Duración de la notificación en el escritorio:  "
+   },
+   "showtodowhenopen": {
+      "message": "Avisar de tareas pendientes en las notificaciones de escritorio cuando ejecuta el navegador."
+   },
+   "showupdate": {
+      "message": "Mostrar la página de actualización cada vez que se actualice esta extensión"
+   },
+   "stat": {
+      "message": "Estadísticas"
+   },
+   "timeis": {
+      "message": "La hora es:  "
+   },
+   "timer": {
+      "message": "Cronómetro"
+   },
+   "tools": {
+      "message": "Herramientas"
+   },
+   "updateiconevery": {
+      "message": "Recargar el icono cada:    "
+   },
+   "updateiconeverymsg": {
+      "message": "(Cuánto más grande sea, más liviana será esta extensión.)"
+   },
+   "useanalog": {
+      "message": "Usar reloj analógico"
+   },
+   "usedarkmode": {
+      "message": "Usar en modo para temas oscuros (Para los que usan temas oscuros, se agrega una burbuja semi-transparente para que puedan ver el reloj.)"
+   },
+   "usedigital": {
+      "message": "Usar Reloj Digital"
+   },
+   "version": {
+      "message": "Versión"
+   },
+   "viewsavedalarm": {
+      "message": "Ver alarmas guardadas"
+   },
+   "whatsnew": {
+      "message": "Ver qué hay de nuevo en esta versión"
+   }
+}

@@ -1,0 +1,269 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "URLringtone": {
+      "message": "URL-ről"
+   },
+   "_10sec": {
+      "message": "10 másodperc"
+   },
+   "_12hour": {
+      "message": "Legyen 12 órás rendszer (Alapértelmezett a 24 órás rendszer)"
+   },
+   "_1min": {
+      "message": "1 perc"
+   },
+   "_1sec": {
+      "message": "1 másodperc"
+   },
+   "_2sec": {
+      "message": "2 másodperc"
+   },
+   "_30sec": {
+      "message": "30 másodperc"
+   },
+   "_5sec": {
+      "message": "5 másodperc"
+   },
+   "about": {
+      "message": "Névjegy"
+   },
+   "alarm": {
+      "message": "Ébresztőóra"
+   },
+   "alarmandringtone": {
+      "message": "Ébresztő és Csengőhang"
+   },
+   "allpurpose": {
+      "message": "Általános csengőhang"
+   },
+   "am": {
+      "message": "de."
+   },
+   "analog": {
+      "message": "Analóg Vekker"
+   },
+   "analogmsg": {
+      "message": "(Kb. 4KB másodpercenként.)"
+   },
+   "apply": {
+      "message": "Alkalmaz"
+   },
+   "calendar": {
+      "message": "Naptár"
+   },
+   "cancel": {
+      "message": "Mégsem"
+   },
+   "chat": {
+      "message": "Chat box"
+   },
+   "close": {
+      "message": "Bezár"
+   },
+   "cmtmsg": {
+      "message": "Itt adhat visszajelzést, tehet megjegyzést vagy jelenthet hibát"
+   },
+   "comment": {
+      "message": "Megjegyzések"
+   },
+   "countdown": {
+      "message": "Visszaszámláló"
+   },
+   "ctxcmt": {
+      "message": "Hibajelentés, Észrevételek"
+   },
+   "ctxhide": {
+      "message": "Ezeket a tételeket ne mutassa"
+   },
+   "day_0": {
+      "message": "vasárnap"
+   },
+   "day_1": {
+      "message": "hétfő"
+   },
+   "day_2": {
+      "message": "kedd"
+   },
+   "day_3": {
+      "message": "szerda"
+   },
+   "day_4": {
+      "message": "csütörtök"
+   },
+   "day_5": {
+      "message": "péntek"
+   },
+   "day_6": {
+      "message": "szombat"
+   },
+   "defaultringtone": {
+      "message": "Alapértelmezett csengőhang"
+   },
+   "digital": {
+      "message": "Digitális Vekker"
+   },
+   "digitalmsg": {
+      "message": "(A Digitális Vekker valamivel több memóriát fog használni.)"
+   },
+   "display": {
+      "message": "Képernyő"
+   },
+   "enablehourlytimeannounce": {
+      "message": "Kapcsold be az óránkénti közleményt! (A számítógép jelenti)"
+   },
+   "evening": {
+      "message": "Vacsoráztál már?"
+   },
+   "extDes": {
+      "message": "Egy bővítmény, tele minden hasznos, idővel kapcsolatos tulajdonsággal. És a legjobb benne, hogy tök vagány."
+   },
+   "extName": {
+      "message": "Vagány Vekker"
+   },
+   "forum": {
+      "message": "Fórum"
+   },
+   "hourlytimeannounce": {
+      "message": "Óránkénti közlemény"
+   },
+   "max999": {
+      "message": "(Legfeljebb: 999)"
+   },
+   "memmsg": {
+      "message": "Az animáció általában másodpercenként \"rajzol\" egy új képet, ezért normálisan egy idő múlva jó sok memóriát foglal, amíg sikerül azt lecsökkentenem a minimumra."
+   },
+   "midnight": {
+      "message": "Na, mi van?"
+   },
+   "month_1": {
+      "message": "jan."
+   },
+   "month_10": {
+      "message": "okt."
+   },
+   "month_11": {
+      "message": "nov."
+   },
+   "month_12": {
+      "message": "dec."
+   },
+   "month_2": {
+      "message": "febr."
+   },
+   "month_3": {
+      "message": "márc."
+   },
+   "month_4": {
+      "message": "ápr."
+   },
+   "month_5": {
+      "message": "máj."
+   },
+   "month_6": {
+      "message": "jún."
+   },
+   "month_7": {
+      "message": "júl."
+   },
+   "month_8": {
+      "message": "aug."
+   },
+   "month_9": {
+      "message": "szept."
+   },
+   "morning": {
+      "message": "Jó reggelt!"
+   },
+   "night": {
+      "message": "Ideje lefeküdnöd."
+   },
+   "none": {
+      "message": "Nem"
+   },
+   "noon": {
+      "message": "Szép délutánt!"
+   },
+   "noscroll": {
+      "message": "Ne használja a scroll-t (Jelenítsen meg 4 számot a görgetés helyett)"
+   },
+   "notflash": {
+      "message": "(Én nem vagyok Flash vekker!)"
+   },
+   "notitimeannounce": {
+      "message": "Óránkénti közlemény"
+   },
+   "notitimeis": {
+      "message": "Az idő most"
+   },
+   "notsaved": {
+      "message": "A változtatásokat még nem mentettük el! Ennek ellenére folytassuk?"
+   },
+   "pm": {
+      "message": "du."
+   },
+   "saved": {
+      "message": "Elmentve."
+   },
+   "seconds": {
+      "message": "másodpercek"
+   },
+   "setalarm": {
+      "message": "Ébresztés beállítása"
+   },
+   "settings": {
+      "message": "Beállítások"
+   },
+   "showbadgeclock": {
+      "message": "Jelenítse meg a Vekkert jelvényen"
+   },
+   "showiconclock": {
+      "message": "Jelenítse meg a Vekkert ikonon (nyíllal)"
+   },
+   "shownotificationfor": {
+      "message": "Látod az értesítését"
+   },
+   "showtodowhenopen": {
+      "message": "Tennivalóra figyelmeztet a számítógép jelentése, amikor megnyitod a böngészőt"
+   },
+   "showupdate": {
+      "message": "Mutassa a frissítési oldalt a bővítmény minden frissítésekor"
+   },
+   "stat": {
+      "message": "Statisztikák"
+   },
+   "timeis": {
+      "message": "A pontos idő: "
+   },
+   "timer": {
+      "message": "Stopperóra"
+   },
+   "tools": {
+      "message": "Eszközök"
+   },
+   "updateiconevery": {
+      "message": "Frissítse az ikont minden: "
+   },
+   "updateiconeverymsg": {
+      "message": "(Minél hosszabb, annál elegánsabb ez a bővítmény; ugyanakkor minél hosszabb, annál erősebben hat a bővítmény más részeire.)"
+   },
+   "useanalog": {
+      "message": "Legyen Analóg Vekker"
+   },
+   "usedarkmode": {
+      "message": "Legyen Sötét téma módban (a sötét témát használóknál a számok alá helyezett félig átlátszó buborékkal teszi láthatóvá az időt.)"
+   },
+   "usedigital": {
+      "message": "Legyen Digitális Vekker"
+   },
+   "version": {
+      "message": "Verzió"
+   },
+   "viewsavedalarm": {
+      "message": "Az elmentett ébresztők áttekintése"
+   },
+   "whatsnew": {
+      "message": "A frissítési napló áttekintése"
+   }
+}

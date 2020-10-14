@@ -1,0 +1,1 @@
+function handleMessage(e,a,s){switch(safariAPI&&!s&&e.callbackId&&(s=function(a){a.callbackId=e.callbackId,sendMessage("requestResponse",{type:"ACTION",data:a})}),e.name){case"confirmContextMenuFill":window.confirm(e.data.message)?s({confirm:!0}):s({confirm:!1})}}addMessageListener(onMessage);

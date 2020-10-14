@@ -1,0 +1,41 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "polyfill.js", "ext/common.js", "ext/background.js", "lib/compat.js", "lib/publicSuffixList.js", "lib/easyadblock.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "Free AdBlocker"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "polyfill.js", "ext/common.js", "ext/content.js", "include.preload.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "include.postload.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "default_locale": "en_US",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "icons/icon-128.png",
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsFfJcF0Fn0nitiMw0bMc8OBIoEieLewVy7ZYtau4lNNfWadl5A64ADVThz27QGH5XtzAdkVdhNhHzKbadJbD58FOPdGVJySsxNJy/PaBo4xHNByq5QIHI3iveIS9WHmBSokJ0cNeV+O0Pb+OuObIOhRI2U3vOWvXdnhoALUyUF/K4mx/Os0B7GnDo5MdW2z6h0DoSUNW/LlHN+HQFUFTQhjU/tQD80OvYtaBDhdcML3AlHXxBpAv3z9j2AgkhO+0QDlmD7W+yLSeCBsbliYaghSYTDWE0isDDKKczitM7bXO3a3u7jnJP0ppsERFzkzWaLYvFh3B0+T7OA/6kfetdQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "49.0",
+   "name": "__MSG_appName__",
+   "permissions": [ "\u003Call_urls>", "webRequest", "webRequestBlocking", "webNavigation", "storage", "unlimitedStorage" ],
+   "storage": {
+      "managed_schema": "managed-storage-schema.json"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.1"
+}
